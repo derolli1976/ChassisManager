@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8145518A-F516-42C0-9454-64ED56780590}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.GFS.WCS.ChassisManager.Ipmi</RootNamespace>
+    <AssemblyName>Microsoft.GFS.WCS.ChassisManager.Ipmi</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName>%24/Mt Rainier/Manageability/OCP Related/Ipmi</SccProjectName>
+    <SccLocalPath>.</SccLocalPath>
+    <SccAuxPath>https://vstf-us-wa-07.partners.extranet.microsoft.com:8443/tfs/gfs%2520data%2520center%2520infrastructure</SccAuxPath>
+    <SccProvider>{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>BasicCorrectnessRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>true</DelaySign>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AssemblyVersion.cs">
+      <Link>Properties\AssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="Ipmi\Client\IpmiClientBase\IpmiClientAdvance.cs" />
+    <Compile Include="Ipmi\Client\IpmiClientBase\IpmiClientBasic.cs" />
+    <Compile Include="Ipmi\Client\IpmiClientBase\IpmiClientExtended.cs" />
+    <Compile Include="Ipmi\Client\IpmiClientResponse.cs" />
+    <Compile Include="Ipmi\Client\EscapeCharactor.cs" />
+    <Compile Include="Ipmi\Client\IpmiClientBase\IpmiClientBase.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Chassis\SetPowerCycleIntervalResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Chassis\SetPowerCycleIntervalRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Chassis\GetSystemInfoRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Chassis\SetPowerRestoreResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Chassis\SetPowerRestoreRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Fru\WriteFruDataResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Fru\WriteFruDataRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Jbod\GetDiskInfoResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Jbod\GetDiskInfoRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Jbod\GetDiskStatusRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Jbod\GetDiskStatusResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Message\ReadEventMessageBufferResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Message\ReadEventMessageBufferRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Message\GetMessageFlagsResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Message\GetMessageFlagsRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Message\MasterWriterReadResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Message\MasterWriteReadRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Message\EnableMessageChannelResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Message\EnableMessageChannelRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Message\GetMessageResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Message\GetMessageRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Message\SendMessageRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Message\SendMessageResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Oem\BmcDebugRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Oem\BmcDebugResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Oem\GetNicInfoResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Oem\GetNicInfoRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Oem\GetPCIeInfoResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Oem\GetPCIeInfoRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Oem\GetMemoryInfoResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Oem\GetMemoryInfoRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Oem\GetProcessorInfoResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Oem\GetProcessorInfoRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Sdr\GetSensorTypeResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Sdr\GetSensorTypeRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Sdr\GetSdrRepositoryInfoResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Sdr\GetSdrRepositoryInfoRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\SerialModem\GetChannelInfoRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\SerialModem\GetChannelInfoResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\SerialModem\GetSerialModemConfigRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\SerialModem\GetSerialModemConfigResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\SerialModem\SerialConfigBase.cs" />
+    <Compile Include="Ipmi\IpmiCommand\SerialModem\SetSerialModemConfigResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\SerialModem\SetSerialMuxResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\SerialModem\SetSerialMuxRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\SerialModem\SetSerialModemConfigRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Session\ActivateSessionRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Session\ActivateSessionResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Session\AuthenticationType.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Chassis\ChassisControlRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Chassis\ChassisControlResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Chassis\ChassisIdentifyRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Chassis\ChassisIdentifyResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Session\CloseSessionRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Session\CloseSessionResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Dcmi\DcmiActivatePowerLimitRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Dcmi\DcmiActivatePowerLimitResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Session\SetChannelAccessResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Session\SetChannelAccessRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Session\GetChannelAuthenticationCapabilitiesRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Session\GetChannelAuthenticationCapabilitiesResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Session\GetChannelCipherSuitesRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Session\GetChannelCipherSuitesResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Chassis\GetChassisCapabilitiesRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Chassis\GetChassisCapabilitiesResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Chassis\GetChassisStatusRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Chassis\GetChassisStatusResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Dcmi\GetDcmiCapabilitiesRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Dcmi\GetDcmiCapabilitiesResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Dcmi\GetDcmiPowerLimitRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Dcmi\GetDcmiPowerLimitResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Dcmi\GetDcmiPowerReadingRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Dcmi\GetDcmiPowerReadngResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Chassis\GetDeviceIdRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Chassis\GetDeviceIdResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Fru\GetFruDataRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Fru\GetFruDataResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Fru\GetFruInventoryAreaInfoRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Fru\GetFruInventoryAreaInfoResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Chassis\GetPohCounterRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Chassis\GetPohCounterResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Sdr\GetReadingFactorsRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Sdr\GetReadingFactorsResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Sdr\GetSdrPartialRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Sdr\GetSdrPartialResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Sdr\GetSdrRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Sdr\GetSdrResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Sdr\GetSensorReadingRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Sdr\GetSensorReadingResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Session\GetSessionChallengeRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Session\GetSessionChallengeResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Session\GetSessionInfoRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Session\GetSessionInfoResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Chassis\GetSystemBootOptionsRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Chassis\GetSystemBootOptionsResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Chassis\GetSystemGuidRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Chassis\GetSystemGuidResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\SystemEventLog\SelSupport.cs" />
+    <Compile Include="Ipmi\IpmiCommand\SystemEventLog\SetSelTimeResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\SystemEventLog\SetSelTimeRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\SystemEventLog\SelTimeResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\SystemEventLog\SetTimeRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\User\GetUserAccessRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\User\GetUserAccessResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\User\GetUserNameRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\User\GetUserNameResponse.cs" />
+    <Compile Include="Ipmi\Client\IpmiClientEnums.cs" />
+    <Compile Include="Ipmi\Client\IpmiClientObjects.cs" />
+    <Compile Include="Ipmi\Client\IpmiSharedFunc.cs" />
+    <Compile Include="Ipmi\Client\IpmiMessage\IpmiFunction.cs" />
+    <Compile Include="Ipmi\Client\IpmiMessage\IpmiMessage.cs" />
+    <Compile Include="Ipmi\Client\IpmiMessage\IpmiMessageAttribute.cs" />
+    <Compile Include="Ipmi\Client\IpmiMessage\IpmiMessageDataAttribute.cs" />
+    <Compile Include="Ipmi\Client\IpmiMessage\IpmiMessageRequestAttribute.cs" />
+    <Compile Include="Ipmi\Client\IpmiMessage\IpmiMessageResponseAttribute.cs" />
+    <Compile Include="Ipmi\Client\IpmiMessage\IpmiRequest.cs" />
+    <Compile Include="Ipmi\Client\IpmiMessage\IpmiResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Session\OpenSessionRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Session\OpenSessionResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Sdr\ReserveSdrRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Sdr\ReserveSdrResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Sdr\SdrConversionFactors.cs" />
+    <Compile Include="Ipmi\IpmiCommand\SystemEventLog\SelLogClearRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\SystemEventLog\SelLogClearResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\SystemEventLog\SelLogEntryRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\SystemEventLog\SelLogEntryResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\SystemEventLog\SelLogInfoRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\SystemEventLog\SelLogInfoResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\SystemEventLog\SelReserveRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\SystemEventLog\SelReserveResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Dcmi\SetDcmiPowerLimitRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Dcmi\SetDcmiPowerLimitResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Session\SetSessionPrivilegeLevelRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Session\SetSessionPrivilegeLevelResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Chassis\SetSystemBootOptionsRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\Chassis\SetSystemBootOptionsResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\User\SetUserAccessRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\User\SetUserAccessResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\User\SetUserNameRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\User\SetUserNameResponse.cs" />
+    <Compile Include="Ipmi\IpmiCommand\User\SetUserPasswordRequest.cs" />
+    <Compile Include="Ipmi\IpmiCommand\User\SetUserPasswordResponse.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
