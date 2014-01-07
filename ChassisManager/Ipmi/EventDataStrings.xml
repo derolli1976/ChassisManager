@@ -1,0 +1,1023 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SystemEventLog>
+  <EventLogTypeCode>
+    <GenericEvent>
+      <TypeCode Number="1" ReadingClass="Threshold" Description="THRESHOLD BASED STATES">
+	          <Offset Number="00" Description="Trigger Reading: {0} Threshold: {1}.  Sensor State: Lower Non-critical - going low"></Offset>
+	          <Offset Number="01" Description="Trigger Reading: {0} Threshold: {1}.  Sensor State: Lower Non-critical - going high"></Offset>
+	          <Offset Number="02" Description="Trigger Reading: {0} Threshold: {1}.  Sensor State: Lower Critical - going low"></Offset>
+	          <Offset Number="03" Description="Trigger Reading: {0} Threshold: {1}.  Sensor State: Lower Critical - going high"></Offset>
+	          <Offset Number="04" Description="Trigger Reading: {0} Threshold: {1}.  Sensor State: Lower Non-recoverable - going low"></Offset>
+	          <Offset Number="05" Description="Trigger Reading: {0} Threshold: {1}.  Sensor State: Lower Non-recoverable - going high"></Offset>
+	          <Offset Number="06" Description="Trigger Reading: {0} Threshold: {1}.  Sensor State: Upper Non-critical - going low"></Offset>
+	          <Offset Number="07" Description="Trigger Reading: {0} Threshold: {1}.  Sensor State: Upper Non-critical - going high"></Offset>
+	          <Offset Number="08" Description="Trigger Reading: {0} Threshold: {1}.  Sensor State: Upper Critical - going low"></Offset>
+	          <Offset Number="09" Description="Trigger Reading: {0} Threshold: {1}.  Sensor State: Upper Critical - going high"></Offset>
+            <Offset Number="10" Description="Trigger Reading: {0} Threshold: {1}.  Sensor State: Upper Non-recoverable - going low"></Offset>
+            <Offset Number="11" Description="Trigger Reading: {0} Threshold: {1}.  Sensor State: Upper Non-recoverable - going high"></Offset>
+      </TypeCode>
+      <TypeCode Number="2" ReadingClass="Discrete" Description="DMI-based “Usage State” STATES">
+	          <Offset Number="0" Description="Transition to Idle"></Offset>
+	          <Offset Number="1" Description="Transition to Active"></Offset>
+	          <Offset Number="2" Description="Transition to Busy"></Offset>
+      </TypeCode>
+      <TypeCode Number="3" ReadingClass="Discrete" Description="DIGITAL/DISCRETE EVENT STATES">
+	          <Offset Number="0" Description="State Deasserted"></Offset>
+	          <Offset Number="1" Description="State Asserted"></Offset>
+      </TypeCode>
+      <TypeCode Number="4" ReadingClass="Discrete" Description="DIGITAL/DISCRETE EVENT STATES">
+	          <Offset Number="0" Description="Predictive Failure deasserted"></Offset>
+	          <Offset Number="1" Description="Predictive Failure asserted"></Offset>
+      </TypeCode>
+      <TypeCode Number="5" ReadingClass="Discrete" Description="DIGITAL/DISCRETE EVENT STATES">
+	          <Offset Number="0" Description="Limit Not Exceeded"></Offset>
+	          <Offset Number="1" Description="Limit Exceeded"></Offset>
+      </TypeCode>
+      <TypeCode Number="6" ReadingClass="Discrete" Description="DIGITAL/DISCRETE EVENT STATES">
+	          <Offset Number="0" Description="Performance Met"></Offset>
+	          <Offset Number="1" Description="Performance Lags"></Offset>
+      </TypeCode>
+      <TypeCode Number="7" ReadingClass="Discrete" Description="SEVERITY EVENT STATES">
+	          <Offset Number="0" Description="transition to OK"></Offset>
+	          <Offset Number="1" Description="transition to Non-Critical from OK"></Offset>
+            <Offset Number="2" Description="transition to Critical from less severe"></Offset>
+            <Offset Number="3" Description="transition to Non-recoverable from less severe"></Offset>
+            <Offset Number="4" Description="transition to Non-Critical from more severe"></Offset>
+            <Offset Number="5" Description="ransition to Critical from Non-recoverable"></Offset>
+            <Offset Number="6" Description="transition to Non-recoverable"></Offset>
+            <Offset Number="7" Description="Monitor"></Offset>
+            <Offset Number="8" Description="Informational"></Offset>
+      </TypeCode>
+      <TypeCode Number="8" ReadingClass="Discrete" Description="AVAILABILITY STATUS STATES">
+	          <Offset Number="0" Description="Device Removed / Device Absent"></Offset>
+	          <Offset Number="1" Description="Device Inserted / Device Present"></Offset>
+      </TypeCode>
+      <TypeCode Number="9" ReadingClass="Discrete" Description="AVAILABILITY STATUS STATES">
+	          <Offset Number="0" Description="Device Disabled"></Offset>
+	          <Offset Number="1" Description="Device Enabled"></Offset>
+      </TypeCode>
+      <TypeCode Number="10" ReadingClass="Discrete" Description="AVAILABILITY STATUS STATES">
+	          <Offset Number="0" Description="transition to Running"></Offset>
+	          <Offset Number="1" Description="transition to In Test"></Offset>
+      	    <Offset Number="2" Description="transition to Power Off"></Offset>
+  	        <Offset Number="3" Description="transition to On Line"></Offset>
+	          <Offset Number="4" Description="transition to Off Line"></Offset>
+	          <Offset Number="5" Description="transition to Off Duty"></Offset>
+	          <Offset Number="6" Description="transition to Degraded"></Offset>
+            <Offset Number="7" Description="transition to Power Save"></Offset>
+            <Offset Number="8" Description="Install Error"></Offset>
+      </TypeCode>
+      <TypeCode Number="11" ReadingClass="Discrete" Description="Other AVAILABILITY STATUS STATES">
+	          <Offset Number="0" Description="Fully Redundant (formerly “Redundancy Regained”)Indicates that full redundancy has been regained. Redundancy Lost"></Offset>
+	          <Offset Number="1" Description="Entered any non-redundant state, including Non-redundant:Insufficient Resources.Redundancy Degraded"></Offset>
+      	    <Offset Number="2" Description="Redundancy still exists, but at a less than full level."></Offset>
+  	        <Offset Number="3" Description="Non-redundant:Sufficient Resources from Redundant Redundancy has been lost but unit is functioning with minimum resources needed for normal operation. Entered from Redundancy Degraded or Fully Redundant"></Offset>
+	          <Offset Number="4" Description="Non-redundant:Sufficient Resources from Insufficient Resources. Unit has regained minimum resources needed for normal operation. Entered from Non-redundant:Insufficient Resources"></Offset>
+	          <Offset Number="5" Description="Non-redundant:Insufficient Resources Unit is non-redundant and has insufficient resources to maintain normal operation."></Offset>
+	          <Offset Number="6" Description="Redundancy Degraded from Fully Redundant Unit has lost some redundant resource(s) but is still in a redundant state. Entered by a transition from Fully Redundant condition"></Offset>
+            <Offset Number="7" Description="Redundancy Degraded from Non-redundant Unit has regained some resource(s) and is redundant but not fully redundant. Entered from Non-redundant:Sufficient Resources or Non-redundant:Insufficient Resources"></Offset>
+      </TypeCode>
+      <TypeCode Number="12" ReadingClass="Discrete" Description="ACPI Device Power States">
+	          <Offset Number="0" Description="D0 Power State"></Offset>
+	          <Offset Number="1" Description="D1 Power State"></Offset>
+      	    <Offset Number="2" Description="D2 Power State"></Offset>
+  	        <Offset Number="3" Description="D3 Power State"></Offset>
+      </TypeCode>
+    </GenericEvent>
+    <SensorSpecificEvent>
+        <TypeCode Number="0" ReadingClass="Reserved" Description="Reserved">
+            <Offset Number="00" Description="Event contained no data or event message"></Offset>
+      </TypeCode>
+        <TypeCode Number="1" ReadingClass="Temperature" Description="Temperature">
+            <Offset Number="00" Description="Temperature Reading {0} Temperature Trigger Value {1}"></Offset>
+      </TypeCode>
+        <TypeCode Number="2" ReadingClass="Voltage" Description="Voltage">
+            <Offset Number="00" Description="Voltage Reading {0} Voltage Trigger Value {1}">
+            </Offset>
+        </TypeCode>
+        <TypeCode Number="3" ReadingClass="Current" Description="Current">
+            <Offset Number="00" Description="Current Reading {0} Current Trigger Value {1}">
+            </Offset>
+        </TypeCode>
+        <TypeCode Number="4" ReadingClass="Fan" Description="Fan">
+            <Offset Number="00" Description="Fan Reading {0} Fan Trigger Value {1}"></Offset>
+        </TypeCode>
+        <TypeCode Number="5" ReadingClass="Physical Security" Description="Physical Security">
+            <Offset Number="00" Description="General Chassis Intrusion"></Offset>
+            <Offset Number="01" Description="Drive Bay intrusion"></Offset>
+            <Offset Number="02" Description="I/O Card area intrusion"></Offset>
+            <Offset Number="03" Description="Processor area intrusion"></Offset>
+            <Offset Number="04" Description="LAN Leash Lost (system is unplugged from LAN) Network Card Id {0}"></Offset>
+            <Offset Number="05" Description="Unauthorized dock"></Offset>
+            <Offset Number="06" Description="FAN area intrusion (supports detection of hot plug fan tampering)"></Offset>
+        </TypeCode>
+        <TypeCode Number="6" ReadingClass="Platform Security Violation Attempt" Description="Platform Security Violation Attempt">
+            <Offset Number="00" Description="Secure Mode (Front Panel Lockout) Violation attempt"></Offset>
+            <Offset Number="01" Description="Pre-boot Password Violation -user password"></Offset>
+            <Offset Number="02" Description="Pre-boot Password Violation attempt -setup password"></Offset>
+            <Offset Number="03" Description="Pre-boot Password Violation -network boot password"></Offset>
+            <Offset Number="04" Description="Other pre-boot Password Violation"></Offset>
+            <Offset Number="05" Description="Out-of-band Access Password Violation"></Offset>
+        </TypeCode>
+        <TypeCode Number="7" ReadingClass="Processor" Description="Processor">
+            <Offset Number="00" Description="IERR"></Offset>
+            <Offset Number="01" Description="Thermal Trip"></Offset>
+            <Offset Number="02" Description="FRB1/BIST failure"></Offset>
+            <Offset Number="03" Description="FRB2/Hang in POST failure (used hang is believed to be due or related to a processor failure. Use System Firmware Progress sensor for other BIOS hangs.)"></Offset>
+            <Offset Number="04" Description="FRB3/Processor Startup/Initialization failure (CPU did not start)"></Offset>
+            <Offset Number="05" Description="Configuration Error"></Offset>
+            <Offset Number="06" Description="SM BIOS: Uncorrectable CPU-complex Error"></Offset>
+            <Offset Number="07" Description="Processor Presence detected"></Offset>
+            <Offset Number="08" Description="Processor disabled"></Offset>
+            <Offset Number="09" Description="Terminator Presence Detected"></Offset>
+            <Offset Number="10" Description="Processor Automatically Throttled (processor throttling triggered by a hardware-based mechanism operating independent from system software, such as automatic thermal throttling or throttling to limit power consumption.)"></Offset>
+            <Offset Number="11" Description="Machine Check Exception (Uncorrectable)">
+              <Extension Number="00" Description="Phy Control Error"></Extension>
+              <Extension Number="02" Description="Drift Buffer Overrun"></Extension>
+              <Extension Number="03" Description="Latency Buffer Over/Underrun"></Extension>
+              <Extension Number="16" Description="R3QPI Control Error"></Extension>
+              <Extension Number="17" Description="Tx Unsuccessful Link Layer Retry"></Extension>
+              <Extension Number="18" Description="Unsupported/Undefined Packet"></Extension>
+              <Extension Number="19" Description="Link Layer Control Error"></Extension>
+              <Extension Number="20" Description="Link Layer L0p Retrain Error"></Extension>
+              <Extension Number="21" Description="Link Layer RBT Error"></Extension>
+              <Extension Number="31" Description="Unsupported Config Request from Message Channel"></Extension>
+              <Extension Number="32" Description="Phy Initialization Abort"></Extension>
+              <Extension Number="33" Description="Not Supported"></Extension>
+              <Extension Number="34" Description="Phy In-band Reset and No Width Change"></Extension>
+              <Extension Number="48" Description="Rx CRC Error with LLR Success after Phy Reset"></Extension>
+              <Extension Number="49" Description="Rx CRC Error with LLR Success (no Phy Reset)"></Extension>
+              <Extension Number="50" Description="Tx CRC Error (Initiates LLR_Req Sequence)"></Extension>
+            </Offset>
+            <Offset Number="12" Description="Correctable Machine Check Error">
+              <Extension Number="00" Description="Phy Control Error"></Extension>
+              <Extension Number="02" Description="Drift Buffer Overrun"></Extension>
+              <Extension Number="03" Description="Latency Buffer Over/Underrun"></Extension>
+              <Extension Number="16" Description="R3QPI Control Error"></Extension>
+              <Extension Number="17" Description="Tx Unsuccessful Link Layer Retry"></Extension>
+              <Extension Number="18" Description="Unsupported/Undefined Packet"></Extension>
+              <Extension Number="19" Description="Link Layer Control Error"></Extension>
+              <Extension Number="20" Description="Link Layer L0p Retrain Error"></Extension>
+              <Extension Number="21" Description="Link Layer RBT Error"></Extension>
+              <Extension Number="31" Description="Unsupported Config Request from Message Channel"></Extension>
+              <Extension Number="32" Description="Phy Initialization Abort"></Extension>
+              <Extension Number="33" Description="Not Supported"></Extension>
+              <Extension Number="34" Description="Phy In-band Reset and No Width Change"></Extension>
+              <Extension Number="48" Description="Rx CRC Error with LLR Success after Phy Reset"></Extension>
+              <Extension Number="49" Description="Rx CRC Error with LLR Success (no Phy Reset)"></Extension>
+              <Extension Number="50" Description="Tx CRC Error (Initiates LLR_Req Sequence)"></Extension>
+            </Offset>
+        </TypeCode>
+        <TypeCode Number="8" ReadingClass="Power Supply" Description="(also applies to power converters [e.g. DC-to-DC converters] and VRMs [voltage regulator modules]).">
+            <Offset Number="00" Description="Presence detected"></Offset>
+            <Offset Number="01" Description="Power Supply Failure detected"></Offset>
+            <Offset Number="02" Description="Predictive Failure"></Offset>
+            <Offset Number="03" Description="Power Supply input lost (AC/DC)"></Offset>
+            <Offset Number="04" Description="Power Supply input lost or out-of-range"></Offset>
+            <Offset Number="05" Description="Power Supply input out-of-range, but present"></Offset>
+            <Offset Number="06" Description="Configuration error:">
+              <Extension Number="0" Description="Vendor mismatch"></Extension>
+              <Extension Number="1" Description="Revision mismatch"></Extension>
+              <Extension Number="2" Description="Processor missing"></Extension>
+              <Extension Number="3" Description="Power Supply rating mismatch"></Extension>
+              <Extension Number="4" Description="Voltage rating mismatch"></Extension>
+            </Offset>
+        </TypeCode>
+        <TypeCode Number="9" ReadingClass="Power Unit" Description="Power Unit">
+            <Offset Number="00" Description="Power Off / Power Down"></Offset>
+            <Offset Number="01" Description="Power Cycle"></Offset>
+            <Offset Number="02" Description="240VA Power Down"></Offset>
+            <Offset Number="03" Description="Interlock Power Down"></Offset>
+            <Offset Number="04" Description="AC lost / Power input lost (The power source for the power unit was lost)"></Offset>
+            <Offset Number="05" Description="Soft Power Control Failure (unit did not respond to request to turn on)"></Offset>
+            <Offset Number="06" Description="Power Unit Failure detected"></Offset>
+            <Offset Number="07" Description="Predictive Failure"></Offset>
+        </TypeCode>
+        <TypeCode Number="10" ReadingClass="Cooling Device" Description="Cooling Device">
+            <Offset Number="00" Description="Cooling Device Error"></Offset>
+        </TypeCode>
+        <TypeCode Number="11" ReadingClass="Other Units-based Sensor" Description="Other Units-based Sensor">
+            <Offset Number="00" Description="Units-based Sensor Error"></Offset>
+        </TypeCode>
+        <TypeCode Number="12" ReadingClass="Memory" Description="Memory">
+            <Offset Number="00" Description="Correctable ECC / other correctable memory error. Module: {0}"></Offset>
+            <Offset Number="01" Description="Uncorrectable ECC / other uncorrectable memory error. Module: {0}"></Offset>
+            <Offset Number="02" Description="Parity. Module: {0}"></Offset>
+            <Offset Number="03" Description="Memory Scrub Failed (stuck bit). Module: {0}"></Offset>
+            <Offset Number="04" Description="Memory Device Disabled. Module: {0}"></Offset>
+            <Offset Number="05" Description="Correctable ECC / other correctable memory error logging limit reached. Module: {0}"></Offset>
+            <Offset Number="06" Description="Presence detected. Module: {0}. Indicates presence of entity associated with the sensor. Typically the entity will be a memory module or other entity representing a physically replaceable unit of memory."></Offset>
+            <Offset Number="07" Description="Configuration error. Module: {0} Indicates a memory configuration error for the entity associated with the sensor. This can include when a  given implementation of the entity is not supported by the system."></Offset>
+            <Offset Number="08" Description="Spare. Indicates entity associated with the sensor represents a spare unit of memory.  Module: {0}"></Offset>
+            <Offset Number="09" Description="Memory Automatically Throttled. Module: {0}."></Offset>
+            <Offset Number="10" Description="Critical Overtemperature. Module: {0}. Memory device has entered a critical overtemperature state, exceeding specified operating conditions. Memory devices in this state may produce errors or become inaccessible"></Offset>
+        </TypeCode>
+        <TypeCode Number="13" ReadingClass="Drive Slot (Bay)" Description="Drive Slot (Bay)">
+            <Offset Number="00" Description="Drive Present"></Offset>
+            <Offset Number="01" Description="Drive Fault"></Offset>
+            <Offset Number="02" Description="Predictive Failure"></Offset>
+            <Offset Number="03" Description="Hot Spare"></Offset>
+            <Offset Number="04" Description="Consistency Check / Parity Check in progress"></Offset>
+            <Offset Number="05" Description="In Critical Array"></Offset>
+            <Offset Number="06" Description="In Failed Array"></Offset>
+            <Offset Number="07" Description="Rebuild/Remap in progress"></Offset>
+            <Offset Number="08" Description="Rebuild/Remap Aborted (was not completed normally)"></Offset>
+        </TypeCode>
+        <TypeCode Number="14" ReadingClass="POST Memory Resize" Description="POST Memory Resize">
+            <Offset Number="00" Description="POST Memory Resize"></Offset>
+        </TypeCode>
+        <TypeCode Number="15" ReadingClass="System Firmware Progress" Description="System Firmware Progress">
+            <Offset Number="00" Description="System Firmware Error (POST Error)">
+              <Extension Number="0" Description="Unspecified."></Extension>
+              <Extension Number="1" Description="No system memory is physically installed in the system."></Extension>
+              <Extension Number="2" Description="No usable system memory, all installed memory has experienced an unrecoverable failure"></Extension>
+              <Extension Number="3" Description="Unrecoverable hard-disk/ATAPI/IDE device failure."></Extension>
+              <Extension Number="4" Description="Unrecoverable system-board failure."></Extension>
+              <Extension Number="5" Description="Unrecoverable diskette subsystem failure."></Extension>
+              <Extension Number="6" Description="Unrecoverable hard-disk controller failure."></Extension>
+              <Extension Number="7" Description="Unrecoverable PS/2 or USB keyboard failure."></Extension>
+              <Extension Number="8" Description="Removable boot media not found."></Extension>
+              <Extension Number="9" Description="Unrecoverable video controller failure."></Extension>
+              <Extension Number="10" Description="No video device detected."></Extension>
+              <Extension Number="11" Description="Firmware (BIOS) ROM corruption detected."></Extension>
+              <Extension Number="12" Description="CPU voltage mismatch (processors that share same supply have mismatched voltage requirements)"></Extension>
+              <Extension Number="13" Description="CPU speed matching failure"></Extension>
+              <Extension Number="14" Description="reserved"></Extension>
+            </Offset>
+            <Offset Number="01" Description="System Firmware Hang">
+              <Extension Number="00" Description="Unspecified."></Extension>
+              <Extension Number="01" Description="Memory initialization."></Extension>
+              <Extension Number="02" Description="Hard-disk initialization"></Extension>
+              <Extension Number="03" Description="Secondary processor(s) initialization"></Extension>
+              <Extension Number="04" Description="User authentication"></Extension>
+              <Extension Number="05" Description="User-initiated system setup"></Extension>
+              <Extension Number="06" Description="USB resource configuration"></Extension>
+              <Extension Number="07" Description="PCI resource configuration"></Extension>
+              <Extension Number="08" Description="Option ROM initialization"></Extension>
+              <Extension Number="09" Description="Video initialization"></Extension>
+              <Extension Number="10" Description="Cache initialization"></Extension>
+              <Extension Number="11" Description="SMBus initialization"></Extension>
+              <Extension Number="12" Description="Keyboard controller initialization"></Extension>
+              <Extension Number="13" Description="Embedded controller/management controller initialization"></Extension>
+              <Extension Number="14" Description="Docking station attachment"></Extension>
+              <Extension Number="15" Description="Enabling docking station"></Extension>
+              <Extension Number="16" Description="Docking station ejection"></Extension>
+              <Extension Number="17" Description="Disabling docking station"></Extension>
+              <Extension Number="18" Description="Calling operating system wake-up vector"></Extension>
+              <Extension Number="19" Description="Starting operating system boot process, e.g. calling Int"></Extension>
+              <Extension Number="20" Description="Baseboard or motherboard initialization"></Extension>
+              <Extension Number="21" Description="reserved"></Extension>
+              <Extension Number="22" Description="Floppy initialization"></Extension>
+              <Extension Number="23" Description="Keyboard test"></Extension>
+              <Extension Number="24" Description="Pointing device test"></Extension>
+              <Extension Number="25" Description="Primary processor initialization"></Extension>
+            </Offset>
+            <Offset Number="02" Description="System Firmware Progress">
+              <Extension Number="00" Description="Unspecified."></Extension>
+              <Extension Number="01" Description="Memory initialization."></Extension>
+              <Extension Number="02" Description="Hard-disk initialization"></Extension>
+              <Extension Number="03" Description="Secondary processor(s) initialization"></Extension>
+              <Extension Number="04" Description="User authentication"></Extension>
+              <Extension Number="05" Description="User-initiated system setup"></Extension>
+              <Extension Number="06" Description="USB resource configuration"></Extension>
+              <Extension Number="07" Description="PCI resource configuration"></Extension>
+              <Extension Number="08" Description="Option ROM initialization"></Extension>
+              <Extension Number="09" Description="Video initialization"></Extension>
+              <Extension Number="10" Description="Cache initialization"></Extension>
+              <Extension Number="11" Description="SMBus initialization"></Extension>
+              <Extension Number="12" Description="Keyboard controller initialization"></Extension>
+              <Extension Number="13" Description="Embedded controller/management controller initialization"></Extension>
+              <Extension Number="14" Description="Docking station attachment"></Extension>
+              <Extension Number="15" Description="Enabling docking station"></Extension>
+              <Extension Number="16" Description="Docking station ejection"></Extension>
+              <Extension Number="17" Description="Disabling docking station"></Extension>
+              <Extension Number="18" Description="Calling operating system wake-up vector"></Extension>
+              <Extension Number="19" Description="Starting operating system boot process, e.g. calling Int"></Extension>
+              <Extension Number="20" Description="Baseboard or motherboard initialization"></Extension>
+              <Extension Number="21" Description="reserved"></Extension>
+              <Extension Number="22" Description="Floppy initialization"></Extension>
+              <Extension Number="23" Description="Keyboard test"></Extension>
+              <Extension Number="24" Description="Pointing device test"></Extension>
+              <Extension Number="25" Description="Primary processor initialization"></Extension>
+            </Offset>
+        </TypeCode>
+        <TypeCode Number="16" ReadingClass="Event Logging Disabled" Description="Event Logging Disabled">
+            <Offset Number="00" Description="Correctable Memory Error Logging Disabled. Memory module/device {0}"></Offset>
+            <Offset Number="01" Description="Event Type Logging Disabled. Event Logging is disabled for following event/reading {0}"></Offset>
+            <Offset Number="02" Description="Log Area Reset/Cleared"></Offset>
+            <Offset Number="03" Description="All Event Logging Disabled"></Offset>
+            <Offset Number="04" Description="SEL Full"></Offset>
+            <Offset Number="05" Description="SEL Almost Full: {0}"></Offset>
+            <Offset Number="06" Description="Correctable Machine Check Error Logging Disabled on Processor: {0} "></Offset>
+        </TypeCode>
+        <TypeCode Number="17" ReadingClass="Watchdog 1" Description="Watchdog 1">
+            <Offset Number="00" Description="BIOS Watchdog Rese"></Offset>
+            <Offset Number="01" Description="OS Watchdog Reset"></Offset>
+            <Offset Number="02" Description="OS Watchdog Shut Down"></Offset>
+            <Offset Number="03" Description="OS Watchdog Power Down"></Offset>
+            <Offset Number="04" Description="OS Watchdog Power Cycle"></Offset>
+            <Offset Number="05" Description="OS Watchdog NMI / Diagnostic Interrupt"></Offset>
+            <Offset Number="06" Description="OS Watchdog Expired, status only"></Offset>
+            <Offset Number="07" Description="OS Watchdog pre-timeout Interrupt, non-NM"></Offset>
+        </TypeCode>
+        <TypeCode Number="18" ReadingClass="System Event" Description="System Event">
+            <Offset Number="00" Description="System Reconfigured"></Offset>
+            <Offset Number="01" Description="OEMSystem Boot Event"></Offset>
+            <Offset Number="02" Description="Undetermined system hardware failure: (this event typically requires system-specific diagnostics to determine failure type)"></Offset>
+            <Offset Number="03" Description="Entry added to Auxiliary Log"></Offset>
+            <Offset Number="04" Description="PEF Action">
+              <Extension Number="0" Description="Alert"></Extension>
+              <Extension Number="1" Description="power off"></Extension>
+              <Extension Number="2" Description="reset"></Extension>
+              <Extension Number="3" Description="power cycle"></Extension>
+              <Extension Number="4" Description="OEM action"></Extension>
+              <Extension Number="5" Description="Diagnostic Interrupt (NMI)"></Extension>
+            </Offset>
+            <Offset Number="05" Description="SEL/SDR Timestamp Clock Synch"></Offset>
+        </TypeCode>
+        <TypeCode Number="19" ReadingClass="Critical Interrupt" Description="Critical Interrupt">
+            <Offset Number="00" Description="Front Panel NMI / Diagnostic Interrupt"></Offset>
+            <Offset Number="01" Description="Bus Timeout"></Offset>
+            <Offset Number="02" Description="I/O channel check NMI"></Offset>
+            <Offset Number="03" Description="Software NM"></Offset>
+            <Offset Number="04" Description="PCI PER"></Offset>
+            <Offset Number="05" Description="PCI SERR"></Offset>
+            <Offset Number="06" Description="EISA Fail Safe Timeout"></Offset>
+            <Offset Number="07" Description="Bus Correctable Error. Device Number {0}. Function Number {1}. Bus Number {2}"></Offset>
+            <Offset Number="08" Description="Bus Uncorrectable Error. Device Number {0}. Function Number {1}. Bus Number {2}"></Offset>
+            <Offset Number="09" Description="Fatal NMI (port 61h, bit 7)"></Offset>
+            <Offset Number="10" Description="Bus Fatal Error. Device Number {0}. Function Number {1}. Bus Number {2}"></Offset>
+            <Offset Number="11" Description="Bus Degraded (bus operating in a degraded performance state)"></Offset>
+        </TypeCode>
+        <TypeCode Number="20" ReadingClass="Button / Switch" Description="Button / Switch">
+            <Offset Number="00" Description="Power Button presse"></Offset>
+            <Offset Number="01" Description="Sleep Button pressed"></Offset>
+            <Offset Number="02" Description="Reset Button pressed"></Offset>
+            <Offset Number="03" Description="FRU latch open (Switch indicating FRU latch is in unlatched position and FRU is mechanically removable)"></Offset>
+            <Offset Number="04" Description="FRU service request button"></Offset>
+        </TypeCode>
+        <TypeCode Number="21" ReadingClass="Module / Board" Description="Module / Board">
+            <Offset Number="00" Description="Module / Board Error: {0}"></Offset>
+        </TypeCode>
+        <TypeCode Number="22" ReadingClass="Microcontroller / Coprocessor" Description="Microcontroller / Coprocessor">
+            <Offset Number="00" Description="Microcontroller / Coprocessor: {0}"></Offset>
+        </TypeCode>
+        <TypeCode Number="23" ReadingClass="Add-in Card" Description="Add-in Card">
+            <Offset Number="00" Description="Add-in Card: {0}"></Offset>
+        </TypeCode>
+        <TypeCode Number="24" ReadingClass="Chassis" Description="Chassis">
+            <Offset Number="00" Description="Chassis: {0}"></Offset>
+        </TypeCode>
+        <TypeCode Number="25" ReadingClass="Chip Set" Description="Chip Set">
+            <Offset Number="00" Description="Soft Power Control Failure (chip set did not respond to BMC request to change system power state)">
+              <Extension Number="00" Description="S0 / G0 working"></Extension>
+              <Extension Number="01" Description="S1 sleeping with system h/w and processor context maintained"></Extension>
+              <Extension Number="02" Description="S2 sleeping, processor context lost"></Extension>
+              <Extension Number="03" Description="S3 sleeping, processor and h/w context lost, memory retained."></Extension>
+              <Extension Number="04" Description="S4 non-volatile sleep / suspend-to disk"></Extension>
+              <Extension Number="05" Description="S5 / G2 “soft-off"></Extension>
+              <Extension Number="06" Description="S4 / S5 soft-off, particular S4 / S5 state cannot be determined"></Extension>
+              <Extension Number="07" Description="G3 / Mechanical Off"></Extension>
+              <Extension Number="08" Description="Sleeping in an S1, S2, or S3 states (used when particular S1, S2, S3 state cannot be determined)"></Extension>
+              <Extension Number="09" Description="G1 sleeping (S1-S4 state cannot be determined)"></Extension>
+              <Extension Number="10" Description="S5 entered by override"></Extension>
+              <Extension Number="11" Description="Legacy ON state"></Extension>
+              <Extension Number="12" Description="Legacy OFF state"></Extension>
+            </Offset>
+            <Offset Number="01" Description="Thermal Trip"></Offset>
+        </TypeCode>
+        <TypeCode Number="26" ReadingClass="Other FRU" Description="Other FRU">
+            <Offset Number="00" Description="Other FRU Error: {0}"></Offset>
+        </TypeCode>
+        <TypeCode Number="27" ReadingClass="Cable / Interconnect" Description="Cable / Interconnect">
+            <Offset Number="00" Description="Cable/Interconnect is connected"></Offset>
+            <Offset Number="01" Description="Configuration Error -Incorrect cable connected / Incorrect interconnection"></Offset>
+        </TypeCode>
+        <TypeCode Number="28" ReadingClass="Terminator" Description="Terminator">
+            <Offset Number="00" Description="Terminator Error: {0}"></Offset>
+        </TypeCode>
+        <TypeCode Number="29" ReadingClass="System Boot/ Restart Initiated" Description="System Boot/ Restart Initiated">
+            <Offset Number="00" Description="Initiated by power up"></Offset>
+            <Offset Number="01" Description="Initiated by hard reset"></Offset>
+            <Offset Number="02" Description="Initiated by warm reset"></Offset>
+            <Offset Number="03" Description="User requested PXE boot"></Offset>
+            <Offset Number="04" Description="Automatic boot to diagnostic"></Offset>
+            <Offset Number="05" Description="OS / run-time software initiated hard reset"></Offset>
+            <Offset Number="06" Description="OS / run-time software initiated warm reset"></Offset>
+            <Offset Number="07" Description="System Restart Caused By: ">
+              <Extension Number="00" Description="unknown (system start/restart detected, but cause unknown"></Extension>
+              <Extension Number="01" Description="Chassis Controlcommand"></Extension>
+              <Extension Number="02" Description="reset via pushbutton"></Extension>
+              <Extension Number="03" Description="power-up via power pushbutton"></Extension>
+              <Extension Number="04" Description="Watchdog expiration"></Extension>
+              <Extension Number="05" Description="OEM"></Extension>
+              <Extension Number="06" Description="automatic power-up on AC being applied due to always restore power restore policy"></Extension>
+              <Extension Number="07" Description="automatic power-up on AC being applied due to restore previous power state power restore policy"></Extension>
+              <Extension Number="08" Description="reset via PEF"></Extension>
+              <Extension Number="09" Description="power-cycle via PEF"></Extension>
+              <Extension Number="10" Description="soft reset (e.g. CTRL-ALT-DEL)"></Extension>
+              <Extension Number="11" Description="power-up via RTC (system real time clock) wakeup"></Extension>
+            </Offset>
+        </TypeCode>
+        <TypeCode Number="30" ReadingClass="Boot Error" Description="Boot Error">
+            <Offset Number="00" Description="No bootable media"></Offset>
+            <Offset Number="01" Description="Non-bootable diskette left in drive"></Offset>
+            <Offset Number="02" Description="PXE Server not found"></Offset>
+            <Offset Number="03" Description="Invalid boot sector"></Offset>
+            <Offset Number="04" Description="Timeout waiting for user selection of boot source"></Offset>
+        </TypeCode>
+        <TypeCode Number="31" ReadingClass="OS Boot" Description="OS Boot">
+            <Offset Number="00" Description="A: boot completed"></Offset>
+            <Offset Number="01" Description="C: boot completed"></Offset>
+            <Offset Number="02" Description="PXE bootcompleted"></Offset>
+            <Offset Number="03" Description="Diagnostic boot completed"></Offset>
+            <Offset Number="04" Description="CD-ROM boot completed"></Offset>
+            <Offset Number="05" Description="ROM boot completed"></Offset>
+            <Offset Number="06" Description="Boot completed: boot device not specified"></Offset>
+        </TypeCode>
+        <TypeCode Number="32" ReadingClass="OS Stop / Shutdown" Description="OS Stop / Shutdown">
+            <Offset Number="00" Description="Critical sStop during OS load / initialization. Unexpected error during system startup. Stopped waiting for input or power cycle/reset"></Offset>
+            <Offset Number="01" Description="Run-time Stop (a.k.a. core dump, blue screen)"></Offset>
+            <Offset Number="02" Description="OS Graceful Stop(system powered up, but normal OS operation has shut down and system is awaitingreset pushbutton, power-cycle or other external input)"></Offset>
+            <Offset Number="03" Description="OS Graceful Shutdown (system graceful power down by OS)"></Offset>
+            <Offset Number="04" Description="Soft Shutdown initiated by PEF"></Offset>
+            <Offset Number="05" Description="Agent Not Responding. Graceful shutdown request to agent via BMC did not occur due to missing or malfunctioning local agent"></Offset>
+        </TypeCode>
+        <TypeCode Number="33" ReadingClass="Slot / Connector" Description="Slot / Connector">
+            <Offset Number="00" Description="Fault Status asserted">
+              <Extension Number="00" Description="PCI"></Extension>
+              <Extension Number="01" Description="Drive Array"></Extension>
+              <Extension Number="02" Description="External Peripheral Connector"></Extension>
+              <Extension Number="03" Description="Docking"></Extension>
+              <Extension Number="04" Description="other standard internal expansion slot"></Extension>
+              <Extension Number="05" Description="slot associated with entity specified by Entity ID for sensor"></Extension>
+              <Extension Number="06" Description="AdvancedTCA"></Extension>
+              <Extension Number="07" Description="DIMM/memory device"></Extension>
+              <Extension Number="08" Description="FAN"></Extension>
+              <Extension Number="09" Description="PCI Express™"></Extension>
+              <Extension Number="10" Description="SCSI (parallel)"></Extension>
+              <Extension Number="11" Description="SATA / SAS"></Extension>
+            </Offset>
+            <Offset Number="01" Description="Identify Status asserted">
+              <Extension Number="00" Description="PCI"></Extension>
+              <Extension Number="01" Description="Drive Array"></Extension>
+              <Extension Number="02" Description="External Peripheral Connector"></Extension>
+              <Extension Number="03" Description="Docking"></Extension>
+              <Extension Number="04" Description="other standard internal expansion slot"></Extension>
+              <Extension Number="05" Description="slot associated with entity specified by Entity ID for sensor"></Extension>
+              <Extension Number="06" Description="AdvancedTCA"></Extension>
+              <Extension Number="07" Description="DIMM/memory device"></Extension>
+              <Extension Number="08" Description="FAN"></Extension>
+              <Extension Number="09" Description="PCI Express™"></Extension>
+              <Extension Number="10" Description="SCSI (parallel)"></Extension>
+              <Extension Number="11" Description="SATA / SAS"></Extension>
+            </Offset>
+            <Offset Number="02" Description="Slot / Connector Device installed/attached">
+              <Extension Number="00" Description="PCI"></Extension>
+              <Extension Number="01" Description="Drive Array"></Extension>
+              <Extension Number="02" Description="External Peripheral Connector"></Extension>
+              <Extension Number="03" Description="Docking"></Extension>
+              <Extension Number="04" Description="other standard internal expansion slot"></Extension>
+              <Extension Number="05" Description="slot associated with entity specified by Entity ID for sensor"></Extension>
+              <Extension Number="06" Description="AdvancedTCA"></Extension>
+              <Extension Number="07" Description="DIMM/memory device"></Extension>
+              <Extension Number="08" Description="FAN"></Extension>
+              <Extension Number="09" Description="PCI Express™"></Extension>
+              <Extension Number="10" Description="SCSI (parallel)"></Extension>
+              <Extension Number="11" Description="SATA / SAS"></Extension>
+            </Offset>
+            <Offset Number="03" Description="Slot / Connector Ready for Device Installation -Typically, this means that the slot power is off. The Ready for Installation, Ready for Removal, and Slot Power states can transition together, depending on the slot implementation">
+              <Extension Number="00" Description="PCI"></Extension>
+              <Extension Number="01" Description="Drive Array"></Extension>
+              <Extension Number="02" Description="External Peripheral Connector"></Extension>
+              <Extension Number="03" Description="Docking"></Extension>
+              <Extension Number="04" Description="other standard internal expansion slot"></Extension>
+              <Extension Number="05" Description="slot associated with entity specified by Entity ID for sensor"></Extension>
+              <Extension Number="06" Description="AdvancedTCA"></Extension>
+              <Extension Number="07" Description="DIMM/memory device"></Extension>
+              <Extension Number="08" Description="FAN"></Extension>
+              <Extension Number="09" Description="PCI Express™"></Extension>
+              <Extension Number="10" Description="SCSI (parallel)"></Extension>
+              <Extension Number="11" Description="SATA / SAS"></Extension>
+            </Offset>
+            <Offset Number="04" Description="Slot/Connector Ready for Device Removal">
+              <Extension Number="00" Description="PCI"></Extension>
+              <Extension Number="01" Description="Drive Array"></Extension>
+              <Extension Number="02" Description="External Peripheral Connector"></Extension>
+              <Extension Number="03" Description="Docking"></Extension>
+              <Extension Number="04" Description="other standard internal expansion slot"></Extension>
+              <Extension Number="05" Description="slot associated with entity specified by Entity ID for sensor"></Extension>
+              <Extension Number="06" Description="AdvancedTCA"></Extension>
+              <Extension Number="07" Description="DIMM/memory device"></Extension>
+              <Extension Number="08" Description="FAN"></Extension>
+              <Extension Number="09" Description="PCI Express™"></Extension>
+              <Extension Number="10" Description="SCSI (parallel)"></Extension>
+              <Extension Number="11" Description="SATA / SAS"></Extension>
+            </Offset>
+            <Offset Number="05" Description="Slot Power is Off">
+              <Extension Number="00" Description="PCI"></Extension>
+              <Extension Number="01" Description="Drive Array"></Extension>
+              <Extension Number="02" Description="External Peripheral Connector"></Extension>
+              <Extension Number="03" Description="Docking"></Extension>
+              <Extension Number="04" Description="other standard internal expansion slot"></Extension>
+              <Extension Number="05" Description="slot associated with entity specified by Entity ID for sensor"></Extension>
+              <Extension Number="06" Description="AdvancedTCA"></Extension>
+              <Extension Number="07" Description="DIMM/memory device"></Extension>
+              <Extension Number="08" Description="FAN"></Extension>
+              <Extension Number="09" Description="PCI Express™"></Extension>
+              <Extension Number="10" Description="SCSI (parallel)"></Extension>
+              <Extension Number="11" Description="SATA / SAS"></Extension>
+            </Offset>
+            <Offset Number="06" Description="Slot / Connector Device Removal Request -This is typically connected to a switch that becomes asserted to request removal of the device)"></Offset>
+            <Offset Number="07" Description="Interlock asserted -This is typically connected to a switch that mechanically enables/disables power to the slot, or locks the slot in the: Ready for Installation / Ready for Removal states (depending on the slot implementation). The asserted state indicates that the lock -out is active.">
+              <Extension Number="00" Description="PCI"></Extension>
+              <Extension Number="01" Description="Drive Array"></Extension>
+              <Extension Number="02" Description="External Peripheral Connector"></Extension>
+              <Extension Number="03" Description="Docking"></Extension>
+              <Extension Number="04" Description="other standard internal expansion slot"></Extension>
+              <Extension Number="05" Description="slot associated with entity specified by Entity ID for sensor"></Extension>
+              <Extension Number="06" Description="AdvancedTCA"></Extension>
+              <Extension Number="07" Description="DIMM/memory device"></Extension>
+              <Extension Number="08" Description="FAN"></Extension>
+              <Extension Number="09" Description="PCI Express™"></Extension>
+              <Extension Number="10" Description="SCSI (parallel)"></Extension>
+              <Extension Number="11" Description="SATA / SAS"></Extension>
+            </Offset>
+            <Offset Number="08" Description="Slot is Disabled">          
+              <Extension Number="00" Description="PCI"></Extension>
+              <Extension Number="01" Description="Drive Array"></Extension>
+              <Extension Number="02" Description="External Peripheral Connector"></Extension>
+              <Extension Number="03" Description="Docking"></Extension>
+              <Extension Number="04" Description="other standard internal expansion slot"></Extension>
+              <Extension Number="05" Description="slot associated with entity specified by Entity ID for sensor"></Extension>
+              <Extension Number="06" Description="AdvancedTCA"></Extension>
+              <Extension Number="07" Description="DIMM/memory device"></Extension>
+              <Extension Number="08" Description="FAN"></Extension>
+              <Extension Number="09" Description="PCI Express™"></Extension>
+              <Extension Number="10" Description="SCSI (parallel)"></Extension>
+              <Extension Number="11" Description="SATA / SAS"></Extension>
+            </Offset>
+            <Offset Number="09" Description="Slot holds spare device">
+              <Extension Number="00" Description="PCI"></Extension>
+              <Extension Number="01" Description="Drive Array"></Extension>
+              <Extension Number="02" Description="External Peripheral Connector"></Extension>
+              <Extension Number="03" Description="Docking"></Extension>
+              <Extension Number="04" Description="other standard internal expansion slot"></Extension>
+              <Extension Number="05" Description="slot associated with entity specified by Entity ID for sensor"></Extension>
+              <Extension Number="06" Description="AdvancedTCA"></Extension>
+              <Extension Number="07" Description="DIMM/memory device"></Extension>
+              <Extension Number="08" Description="FAN"></Extension>
+              <Extension Number="09" Description="PCI Express™"></Extension>
+              <Extension Number="10" Description="SCSI (parallel)"></Extension>
+              <Extension Number="11" Description="SATA / SAS"></Extension>
+            </Offset>
+        </TypeCode>
+        <TypeCode Number="34" ReadingClass="System ACPI Power State" Description="System ACPI Power State">
+            <Offset Number="00" Description="S0 / G0 working"></Offset>
+            <Offset Number="01" Description="S1 sleeping with system h/w and processor context maintained"></Offset>
+            <Offset Number="02" Description="S2 sleeping, processor context lost"></Offset>
+            <Offset Number="03" Description="S3 sleeping, processor and h/w context lost, memory retained."></Offset>
+            <Offset Number="04" Description="S4 non-volatile sleep / suspend-to disk"></Offset>
+            <Offset Number="05" Description="S5 / G2 soft-off"></Offset>
+            <Offset Number="06" Description="S4 / S5 soft-off, particular S4 / S5 state cannot be determined"></Offset>
+            <Offset Number="07" Description="G3 / Mechanical Off"></Offset>
+            <Offset Number="08" Description="Sleeping in an S1, S2, or S3 states (used when particular S1, S2, S3 state cannot be determined)"></Offset>
+            <Offset Number="09" Description="G1 sleeping (S1-S4 state cannot be determined)"></Offset>
+            <Offset Number="10" Description="S5 entered by override"></Offset>
+            <Offset Number="11" Description="Legacy ON state"></Offset>
+            <Offset Number="12" Description="Legacy OFF state"></Offset>
+            <Offset Number="13" Description="Unknown"></Offset>
+        </TypeCode>
+        <TypeCode Number="35" ReadingClass="Watchdog 2" Description="Watchdog 2">
+            <Offset Number="00" Description="Timer expired, status only (no action, no interrupt)">
+              <Extension Number="0" Description="reserved"></Extension>
+              <Extension Number="1" Description="BIOS FRB2"></Extension>
+              <Extension Number="2" Description="BIOS/POST"></Extension>
+              <Extension Number="3" Description="OS Load"></Extension>
+              <Extension Number="4" Description="SMS/OS"></Extension>
+              <Extension Number="5" Description="OEM"></Extension>  
+            </Offset>
+            <Offset Number="01" Description="Hard Reset">
+              <Extension Number="0" Description="reserved"></Extension>
+              <Extension Number="1" Description="BIOS FRB2"></Extension>
+              <Extension Number="2" Description="BIOS/POST"></Extension>
+              <Extension Number="3" Description="OS Load"></Extension>
+              <Extension Number="4" Description="SMS/OS"></Extension>
+              <Extension Number="5" Description="OEM"></Extension> 
+            </Offset>
+            <Offset Number="02" Description="Power Down">
+              <Extension Number="0" Description="reserved"></Extension>
+              <Extension Number="1" Description="BIOS FRB2"></Extension>
+              <Extension Number="2" Description="BIOS/POST"></Extension>
+              <Extension Number="3" Description="OS Load"></Extension>
+              <Extension Number="4" Description="SMS/OS"></Extension>
+              <Extension Number="5" Description="OEM"></Extension> 
+            </Offset>
+            <Offset Number="03" Description="Power Cycle">
+            <Extension Number="0" Description="reserved"></Extension>
+              <Extension Number="1" Description="BIOS FRB2"></Extension>
+              <Extension Number="2" Description="BIOS/POST"></Extension>
+              <Extension Number="3" Description="OS Load"></Extension>
+              <Extension Number="4" Description="SMS/OS"></Extension>
+              <Extension Number="5" Description="OEM"></Extension> 
+            </Offset>
+            <Offset Number="08" Description="Timer interrupt">
+              <Extension Number="0" Description="reserved"></Extension>
+              <Extension Number="1" Description="BIOS FRB2"></Extension>
+              <Extension Number="2" Description="BIOS/POST"></Extension>
+              <Extension Number="3" Description="OS Load"></Extension>
+              <Extension Number="4" Description="SMS/OS"></Extension>
+              <Extension Number="5" Description="OEM"></Extension> 
+            </Offset>
+        </TypeCode>
+        <TypeCode Number="36" ReadingClass="Platform Alert" Description="Platform Alert">
+            <Offset Number="00" Description="platform generated page"></Offset>
+            <Offset Number="01" Description="platform generated LAN aler"></Offset>
+            <Offset Number="02" Description="Platform Event Trap generated, formatted per IPMI PET Specification"></Offset>
+            <Offset Number="03" Description="platform generated SNMP trap, OEM forma"></Offset>
+        </TypeCode>
+        <TypeCode Number="37" ReadingClass="Entity Presence" Description="This sensor type provides a mechanism that allows a management controller to direct system management software to ignore a set of sensors based on detecting that presence of an entit">
+            <Offset Number="00" Description="Entity Present. This indicates that the Entity identified by the Entity ID for the sensor is present"></Offset>
+            <Offset Number="01" Description="Entity Absent. This indicates that the Entity ident ified by the Entity ID for the sensor is absent. If the entity is absent, system management software should consider all sensors associated with that Entity to be absent as well -and ignore those sensors"></Offset>
+            <Offset Number="02" Description="Entity Disabled. The Entity is present, buthas been disabled. A deassertion of this event indicates that the Entity has been enabled."></Offset>
+        </TypeCode>
+        <TypeCode Number="38" ReadingClass="Monitor ASIC / IC" Description="Monitor ASIC / IC">
+            <Offset Number="00" Description="Monitor ASIC / IC ERROR {0}"></Offset>
+        </TypeCode>
+        <TypeCode Number="39" ReadingClass="LAN" Description="LAN">
+            <Offset Number="00" Description="LAN Heartbeat Lost"></Offset>
+            <Offset Number="01" Description="LAN Heartbeat"></Offset>
+        </TypeCode>
+        <TypeCode Number="40" ReadingClass="Management Subsystem Health" Description="Management Subsystem Health">
+            <Offset Number="00" Description="sensor access degraded or unavailable (Asensor that is degraded will still return valid results, but may be operating with a slower response time, or may not detect certain possible states. A sensor that is unavailable is not able to returnany results)"></Offset>
+            <Offset Number="01" Description="controller access degraded or unavailable  (The ability to access the controller has been degraded, or access is unavailable, but the party that is doing the monitoring cannot determine which.)"></Offset>
+            <Offset Number="02" Description="management controller off-line (controller cannot be accessed for normal operation because it has been intentionally taken off-line for a non-error condition."></Offset>
+            <Offset Number="03" Description="management controller unavailable(controller cannot be accessed because of an error condition)"></Offset>
+            <Offset Number="04" Description="Sensor failure(the sensor is known to be in error. It may still be accessible by software). Sensor Number: {0}"></Offset>
+            <Offset Number="05" Description="FRU failure.  FRU Device Id {0}"></Offset>
+        </TypeCode>
+        <TypeCode Number="41" ReadingClass="Battery" Description="Battery">
+            <Offset Number="00" Description="battery low (predictive failure)"></Offset>
+            <Offset Number="01" Description="battery failed"></Offset>
+            <Offset Number="02" Description="battery presence detected"></Offset>
+        </TypeCode>
+        <TypeCode Number="42" ReadingClass="Session Audit" Description="Session Audit">
+            <Offset Number="00" Description="Session Activated. UserId {0}"></Offset>
+            <Offset Number="01" Description="Session Deactivated. UserId {0}"></Offset>
+            <Offset Number="02" Description="Invalid Username or Password. UserId {0}. An Invalid Username or Password was received during the session establishment process"></Offset>
+            <Offset Number="03" Description="Invalid password disable. UserId {0}. User's access has been disabled due to a series of bad password attempts"></Offset>
+        </TypeCode>
+        <TypeCode Number="43" ReadingClass="Version Change" Description="Version Change">
+            <Offset Number="00" Description="Hardware change detected with associated Entity. Informational. Success or failure not implied">
+              <Extension Number="00" Description="unspecified"></Extension>
+              <Extension Number="01" Description="management controller device ID"></Extension>
+              <Extension Number="02" Description="management controller firmware revision"></Extension>
+              <Extension Number="03" Description="management controller device revision"></Extension>
+              <Extension Number="04" Description="management controller manufacturer ID"></Extension>
+              <Extension Number="05" Description="management controller IPMI version"></Extension>
+              <Extension Number="06" Description="management controller auxiliary firmware ID"></Extension>
+              <Extension Number="07" Description="management controller firmware boot block"></Extension>
+              <Extension Number="08" Description="other management controller firmware"></Extension>
+              <Extension Number="09" Description="system firmware (EFI / BIOS) change"></Extension>
+              <Extension Number="10" Description="SMBIOS change"></Extension>
+              <Extension Number="11" Description="operating system change"></Extension>
+              <Extension Number="12" Description="operating system loader change"></Extension>
+              <Extension Number="13" Description="service or diagnostic partition change"></Extension>
+              <Extension Number="14" Description="management software agent change"></Extension>
+              <Extension Number="15" Description="management software application change"></Extension>
+              <Extension Number="16" Description="management software middleware change"></Extension>
+              <Extension Number="17" Description="programmable hardware change (e.g. FPGA)"></Extension>
+              <Extension Number="18" Description="board/FRU module change (change of a module plugged into associated entity)"></Extension>
+              <Extension Number="19" Description="board/FRU component change (addition or removal of a replaceable component on the board/FRU that is not tracked as a FRU)"></Extension>
+              <Extension Number="20" Description="board/FRU replaced with equivalent version"></Extension>
+              <Extension Number="21" Description="board/FRU replaced with newer version"></Extension>
+              <Extension Number="22" Description="board/FRU replaced with older version"></Extension>
+              <Extension Number="23" Description="board/FRU hardware configuration change (e.g. strap, jumper, cable change, etc)"></Extension>
+            </Offset>
+            <Offset Number="01" Description="Firmware or software change detected with associated Entity. Informational. Success or failure not implied">
+              <Extension Number="00" Description="unspecified"></Extension>
+              <Extension Number="01" Description="management controller device ID"></Extension>
+              <Extension Number="02" Description="management controller firmware revision"></Extension>
+              <Extension Number="03" Description="management controller device revision"></Extension>
+              <Extension Number="04" Description="management controller manufacturer ID"></Extension>
+              <Extension Number="05" Description="management controller IPMI version"></Extension>
+              <Extension Number="06" Description="management controller auxiliary firmware ID"></Extension>
+              <Extension Number="07" Description="management controller firmware boot block"></Extension>
+              <Extension Number="08" Description="other management controller firmware"></Extension>
+              <Extension Number="09" Description="system firmware (EFI / BIOS) change"></Extension>
+              <Extension Number="10" Description="SMBIOS change"></Extension>
+              <Extension Number="11" Description="operating system change"></Extension>
+              <Extension Number="12" Description="operating system loader change"></Extension>
+              <Extension Number="13" Description="service or diagnostic partition change"></Extension>
+              <Extension Number="14" Description="management software agent change"></Extension>
+              <Extension Number="15" Description="management software application change"></Extension>
+              <Extension Number="16" Description="management software middleware change"></Extension>
+              <Extension Number="17" Description="programmable hardware change (e.g. FPGA)"></Extension>
+              <Extension Number="18" Description="board/FRU module change (change of a module plugged into associated entity)"></Extension>
+              <Extension Number="19" Description="board/FRU component change (addition or removal of a replaceable component on the board/FRU that is not tracked as a FRU)"></Extension>
+              <Extension Number="20" Description="board/FRU replaced with equivalent version"></Extension>
+              <Extension Number="21" Description="board/FRU replaced with newer version"></Extension>
+              <Extension Number="22" Description="board/FRU replaced with older version"></Extension>
+              <Extension Number="23" Description="board/FRU hardware configuration change (e.g. strap, jumper, cable change, etc)"></Extension>
+            </Offset>
+            <Offset Number="02" Description="Hardware incompatibility detected with associated Entity.">
+              <Extension Number="00" Description="unspecified"></Extension>
+              <Extension Number="01" Description="management controller device ID"></Extension>
+              <Extension Number="02" Description="management controller firmware revision"></Extension>
+              <Extension Number="03" Description="management controller device revision"></Extension>
+              <Extension Number="04" Description="management controller manufacturer ID"></Extension>
+              <Extension Number="05" Description="management controller IPMI version"></Extension>
+              <Extension Number="06" Description="management controller auxiliary firmware ID"></Extension>
+              <Extension Number="07" Description="management controller firmware boot block"></Extension>
+              <Extension Number="08" Description="other management controller firmware"></Extension>
+              <Extension Number="09" Description="system firmware (EFI / BIOS) change"></Extension>
+              <Extension Number="10" Description="SMBIOS change"></Extension>
+              <Extension Number="11" Description="operating system change"></Extension>
+              <Extension Number="12" Description="operating system loader change"></Extension>
+              <Extension Number="13" Description="service or diagnostic partition change"></Extension>
+              <Extension Number="14" Description="management software agent change"></Extension>
+              <Extension Number="15" Description="management software application change"></Extension>
+              <Extension Number="16" Description="management software middleware change"></Extension>
+              <Extension Number="17" Description="programmable hardware change (e.g. FPGA)"></Extension>
+              <Extension Number="18" Description="board/FRU module change (change of a module plugged into associated entity)"></Extension>
+              <Extension Number="19" Description="board/FRU component change (addition or removal of a replaceable component on the board/FRU that is not tracked as a FRU)"></Extension>
+              <Extension Number="20" Description="board/FRU replaced with equivalent version"></Extension>
+              <Extension Number="21" Description="board/FRU replaced with newer version"></Extension>
+              <Extension Number="22" Description="board/FRU replaced with older version"></Extension>
+              <Extension Number="23" Description="board/FRU hardware configuration change (e.g. strap, jumper, cable change, etc)"></Extension>
+            </Offset>
+            <Offset Number="03" Description="Firmware or software incompatibility detected with associated Entity">
+              <Extension Number="00" Description="unspecified"></Extension>
+              <Extension Number="01" Description="management controller device ID"></Extension>
+              <Extension Number="02" Description="management controller firmware revision"></Extension>
+              <Extension Number="03" Description="management controller device revision"></Extension>
+              <Extension Number="04" Description="management controller manufacturer ID"></Extension>
+              <Extension Number="05" Description="management controller IPMI version"></Extension>
+              <Extension Number="06" Description="management controller auxiliary firmware ID"></Extension>
+              <Extension Number="07" Description="management controller firmware boot block"></Extension>
+              <Extension Number="08" Description="other management controller firmware"></Extension>
+              <Extension Number="09" Description="system firmware (EFI / BIOS) change"></Extension>
+              <Extension Number="10" Description="SMBIOS change"></Extension>
+              <Extension Number="11" Description="operating system change"></Extension>
+              <Extension Number="12" Description="operating system loader change"></Extension>
+              <Extension Number="13" Description="service or diagnostic partition change"></Extension>
+              <Extension Number="14" Description="management software agent change"></Extension>
+              <Extension Number="15" Description="management software application change"></Extension>
+              <Extension Number="16" Description="management software middleware change"></Extension>
+              <Extension Number="17" Description="programmable hardware change (e.g. FPGA)"></Extension>
+              <Extension Number="18" Description="board/FRU module change (change of a module plugged into associated entity)"></Extension>
+              <Extension Number="19" Description="board/FRU component change (addition or removal of a replaceable component on the board/FRU that is not tracked as a FRU)"></Extension>
+              <Extension Number="20" Description="board/FRU replaced with equivalent version"></Extension>
+              <Extension Number="21" Description="board/FRU replaced with newer version"></Extension>
+              <Extension Number="22" Description="board/FRU replaced with older version"></Extension>
+              <Extension Number="23" Description="board/FRU hardware configuration change (e.g. strap, jumper, cable change, etc)"></Extension>
+            </Offset>
+            <Offset Number="04" Description="Entity is of an invalid or unsupported hardware version">
+              <Extension Number="00" Description="unspecified"></Extension>
+              <Extension Number="01" Description="management controller device ID"></Extension>
+              <Extension Number="02" Description="management controller firmware revision"></Extension>
+              <Extension Number="03" Description="management controller device revision"></Extension>
+              <Extension Number="04" Description="management controller manufacturer ID"></Extension>
+              <Extension Number="05" Description="management controller IPMI version"></Extension>
+              <Extension Number="06" Description="management controller auxiliary firmware ID"></Extension>
+              <Extension Number="07" Description="management controller firmware boot block"></Extension>
+              <Extension Number="08" Description="other management controller firmware"></Extension>
+              <Extension Number="09" Description="system firmware (EFI / BIOS) change"></Extension>
+              <Extension Number="10" Description="SMBIOS change"></Extension>
+              <Extension Number="11" Description="operating system change"></Extension>
+              <Extension Number="12" Description="operating system loader change"></Extension>
+              <Extension Number="13" Description="service or diagnostic partition change"></Extension>
+              <Extension Number="14" Description="management software agent change"></Extension>
+              <Extension Number="15" Description="management software application change"></Extension>
+              <Extension Number="16" Description="management software middleware change"></Extension>
+              <Extension Number="17" Description="programmable hardware change (e.g. FPGA)"></Extension>
+              <Extension Number="18" Description="board/FRU module change (change of a module plugged into associated entity)"></Extension>
+              <Extension Number="19" Description="board/FRU component change (addition or removal of a replaceable component on the board/FRU that is not tracked as a FRU)"></Extension>
+              <Extension Number="20" Description="board/FRU replaced with equivalent version"></Extension>
+              <Extension Number="21" Description="board/FRU replaced with newer version"></Extension>
+              <Extension Number="22" Description="board/FRU replaced with older version"></Extension>
+              <Extension Number="23" Description="board/FRU hardware configuration change (e.g. strap, jumper, cable change, etc)"></Extension>
+            </Offset>
+            <Offset Number="05" Description="Entity contains an invalid or unsupported firmware or software version.">
+              <Extension Number="00" Description="unspecified"></Extension>
+              <Extension Number="01" Description="management controller device ID"></Extension>
+              <Extension Number="02" Description="management controller firmware revision"></Extension>
+              <Extension Number="03" Description="management controller device revision"></Extension>
+              <Extension Number="04" Description="management controller manufacturer ID"></Extension>
+              <Extension Number="05" Description="management controller IPMI version"></Extension>
+              <Extension Number="06" Description="management controller auxiliary firmware ID"></Extension>
+              <Extension Number="07" Description="management controller firmware boot block"></Extension>
+              <Extension Number="08" Description="other management controller firmware"></Extension>
+              <Extension Number="09" Description="system firmware (EFI / BIOS) change"></Extension>
+              <Extension Number="10" Description="SMBIOS change"></Extension>
+              <Extension Number="11" Description="operating system change"></Extension>
+              <Extension Number="12" Description="operating system loader change"></Extension>
+              <Extension Number="13" Description="service or diagnostic partition change"></Extension>
+              <Extension Number="14" Description="management software agent change"></Extension>
+              <Extension Number="15" Description="management software application change"></Extension>
+              <Extension Number="16" Description="management software middleware change"></Extension>
+              <Extension Number="17" Description="programmable hardware change (e.g. FPGA)"></Extension>
+              <Extension Number="18" Description="board/FRU module change (change of a module plugged into associated entity)"></Extension>
+              <Extension Number="19" Description="board/FRU component change (addition or removal of a replaceable component on the board/FRU that is not tracked as a FRU)"></Extension>
+              <Extension Number="20" Description="board/FRU replaced with equivalent version"></Extension>
+              <Extension Number="21" Description="board/FRU replaced with newer version"></Extension>
+              <Extension Number="22" Description="board/FRU replaced with older version"></Extension>
+              <Extension Number="23" Description="board/FRU hardware configuration change (e.g. strap, jumper, cable change, etc)"></Extension>
+            </Offset>
+            <Offset Number="06" Description="Hardware Change detected with associated Entity was successful. (deassertion event means unsuccessful).">
+              <Extension Number="00" Description="unspecified"></Extension>
+              <Extension Number="01" Description="management controller device ID"></Extension>
+              <Extension Number="02" Description="management controller firmware revision"></Extension>
+              <Extension Number="03" Description="management controller device revision"></Extension>
+              <Extension Number="04" Description="management controller manufacturer ID"></Extension>
+              <Extension Number="05" Description="management controller IPMI version"></Extension>
+              <Extension Number="06" Description="management controller auxiliary firmware ID"></Extension>
+              <Extension Number="07" Description="management controller firmware boot block"></Extension>
+              <Extension Number="08" Description="other management controller firmware"></Extension>
+              <Extension Number="09" Description="system firmware (EFI / BIOS) change"></Extension>
+              <Extension Number="10" Description="SMBIOS change"></Extension>
+              <Extension Number="11" Description="operating system change"></Extension>
+              <Extension Number="12" Description="operating system loader change"></Extension>
+              <Extension Number="13" Description="service or diagnostic partition change"></Extension>
+              <Extension Number="14" Description="management software agent change"></Extension>
+              <Extension Number="15" Description="management software application change"></Extension>
+              <Extension Number="16" Description="management software middleware change"></Extension>
+              <Extension Number="17" Description="programmable hardware change (e.g. FPGA)"></Extension>
+              <Extension Number="18" Description="board/FRU module change (change of a module plugged into associated entity)"></Extension>
+              <Extension Number="19" Description="board/FRU component change (addition or removal of a replaceable component on the board/FRU that is not tracked as a FRU)"></Extension>
+              <Extension Number="20" Description="board/FRU replaced with equivalent version"></Extension>
+              <Extension Number="21" Description="board/FRU replaced with newer version"></Extension>
+              <Extension Number="22" Description="board/FRU replaced with older version"></Extension>
+              <Extension Number="23" Description="board/FRU hardware configuration change (e.g. strap, jumper, cable change, etc)"></Extension>
+            </Offset>
+            <Offset Number="07" Description="Software or F/W Change detected with associated Entity was successful. (deassertion event means unsuccessful)">
+              <Extension Number="00" Description="unspecified"></Extension>
+              <Extension Number="01" Description="management controller device ID"></Extension>
+              <Extension Number="02" Description="management controller firmware revision"></Extension>
+              <Extension Number="03" Description="management controller device revision"></Extension>
+              <Extension Number="04" Description="management controller manufacturer ID"></Extension>
+              <Extension Number="05" Description="management controller IPMI version"></Extension>
+              <Extension Number="06" Description="management controller auxiliary firmware ID"></Extension>
+              <Extension Number="07" Description="management controller firmware boot block"></Extension>
+              <Extension Number="08" Description="other management controller firmware"></Extension>
+              <Extension Number="09" Description="system firmware (EFI / BIOS) change"></Extension>
+              <Extension Number="10" Description="SMBIOS change"></Extension>
+              <Extension Number="11" Description="operating system change"></Extension>
+              <Extension Number="12" Description="operating system loader change"></Extension>
+              <Extension Number="13" Description="service or diagnostic partition change"></Extension>
+              <Extension Number="14" Description="management software agent change"></Extension>
+              <Extension Number="15" Description="management software application change"></Extension>
+              <Extension Number="16" Description="management software middleware change"></Extension>
+              <Extension Number="17" Description="programmable hardware change (e.g. FPGA)"></Extension>
+              <Extension Number="18" Description="board/FRU module change (change of a module plugged into associated entity)"></Extension>
+              <Extension Number="19" Description="board/FRU component change (addition or removal of a replaceable component on the board/FRU that is not tracked as a FRU)"></Extension>
+              <Extension Number="20" Description="board/FRU replaced with equivalent version"></Extension>
+              <Extension Number="21" Description="board/FRU replaced with newer version"></Extension>
+              <Extension Number="22" Description="board/FRU replaced with older version"></Extension>
+              <Extension Number="23" Description="board/FRU hardware configuration change (e.g. strap, jumper, cable change, etc)"></Extension>
+            </Offset>
+        </TypeCode>
+        <TypeCode Number="44" ReadingClass="FRU State" Description="FRU State">
+            <Offset Number="00" Description="FRU Not Installed">
+              <Extension Number="00" Description="Cause of state change: Normal State Change."></Extension>
+              <Extension Number="01" Description="Cause of state change: Change Commanded by software external to FRU."></Extension>
+              <Extension Number="02" Description="Cause of state change: State Change due to operator changing a Handle latch."></Extension>
+              <Extension Number="03" Description="Cause of state change: State Change due to operator pressing the hot swap push button."></Extension>
+              <Extension Number="04" Description="Cause of state change: State Change due to FRU programmatic action."></Extension>
+              <Extension Number="05" Description="Cause of state change: Communication Lost."></Extension>
+              <Extension Number="06" Description="Cause of state change: CommunicationLost due to local failure."></Extension>
+              <Extension Number="07" Description="Cause of state change: State Change due to unexpected extraction."></Extension>
+              <Extension Number="08" Description="Cause of state change: State Change due to operator intervention/update."></Extension>
+              <Extension Number="09" Description="Cause of state change: Unable to compute IPMB address."></Extension>
+              <Extension Number="10" Description="Cause of state change: Unexpected Deactivation."></Extension>
+              <Extension Number="15" Description="Cause of state change: State Change, Cause Unknown"></Extension>
+            </Offset>
+            <Offset Number="01" Description="FRU Inactive (in standby or hot spare state)">
+              <Extension Number="00" Description="Cause of state change: Normal State Change."></Extension>
+              <Extension Number="01" Description="Cause of state change: Change Commanded by software external to FRU."></Extension>
+              <Extension Number="02" Description="Cause of state change: State Change due to operator changing a Handle latch."></Extension>
+              <Extension Number="03" Description="Cause of state change: State Change due to operator pressing the hot swap push button."></Extension>
+              <Extension Number="04" Description="Cause of state change: State Change due to FRU programmatic action."></Extension>
+              <Extension Number="05" Description="Cause of state change: Communication Lost."></Extension>
+              <Extension Number="06" Description="Cause of state change: CommunicationLost due to local failure."></Extension>
+              <Extension Number="07" Description="Cause of state change: State Change due to unexpected extraction."></Extension>
+              <Extension Number="08" Description="Cause of state change: State Change due to operator intervention/update."></Extension>
+              <Extension Number="09" Description="Cause of state change: Unable to compute IPMB address."></Extension>
+              <Extension Number="10" Description="Cause of state change: Unexpected Deactivation."></Extension>
+              <Extension Number="15" Description="Cause of state change: State Change, Cause Unknown"></Extension>
+            </Offset>
+            <Offset Number="02" Description="FRU Activation Requested">
+              <Extension Number="00" Description="Cause of state change: Normal State Change."></Extension>
+              <Extension Number="01" Description="Cause of state change: Change Commanded by software external to FRU."></Extension>
+              <Extension Number="02" Description="Cause of state change: State Change due to operator changing a Handle latch."></Extension>
+              <Extension Number="03" Description="Cause of state change: State Change due to operator pressing the hot swap push button."></Extension>
+              <Extension Number="04" Description="Cause of state change: State Change due to FRU programmatic action."></Extension>
+              <Extension Number="05" Description="Cause of state change: Communication Lost."></Extension>
+              <Extension Number="06" Description="Cause of state change: CommunicationLost due to local failure."></Extension>
+              <Extension Number="07" Description="Cause of state change: State Change due to unexpected extraction."></Extension>
+              <Extension Number="08" Description="Cause of state change: State Change due to operator intervention/update."></Extension>
+              <Extension Number="09" Description="Cause of state change: Unable to compute IPMB address."></Extension>
+              <Extension Number="10" Description="Cause of state change: Unexpected Deactivation."></Extension>
+              <Extension Number="15" Description="Cause of state change: State Change, Cause Unknown"></Extension>
+            </Offset>
+            <Offset Number="03" Description="FRU Activation In Progress">
+              <Extension Number="00" Description="Cause of state change: Normal State Change."></Extension>
+              <Extension Number="01" Description="Cause of state change: Change Commanded by software external to FRU."></Extension>
+              <Extension Number="02" Description="Cause of state change: State Change due to operator changing a Handle latch."></Extension>
+              <Extension Number="03" Description="Cause of state change: State Change due to operator pressing the hot swap push button."></Extension>
+              <Extension Number="04" Description="Cause of state change: State Change due to FRU programmatic action."></Extension>
+              <Extension Number="05" Description="Cause of state change: Communication Lost."></Extension>
+              <Extension Number="06" Description="Cause of state change: CommunicationLost due to local failure."></Extension>
+              <Extension Number="07" Description="Cause of state change: State Change due to unexpected extraction."></Extension>
+              <Extension Number="08" Description="Cause of state change: State Change due to operator intervention/update."></Extension>
+              <Extension Number="09" Description="Cause of state change: Unable to compute IPMB address."></Extension>
+              <Extension Number="10" Description="Cause of state change: Unexpected Deactivation."></Extension>
+              <Extension Number="15" Description="Cause of state change: State Change, Cause Unknown"></Extension>
+            </Offset>
+            <Offset Number="04" Description="FRU Active">
+              <Extension Number="00" Description="Cause of state change: Normal State Change."></Extension>
+              <Extension Number="01" Description="Cause of state change: Change Commanded by software external to FRU."></Extension>
+              <Extension Number="02" Description="Cause of state change: State Change due to operator changing a Handle latch."></Extension>
+              <Extension Number="03" Description="Cause of state change: State Change due to operator pressing the hot swap push button."></Extension>
+              <Extension Number="04" Description="Cause of state change: State Change due to FRU programmatic action."></Extension>
+              <Extension Number="05" Description="Cause of state change: Communication Lost."></Extension>
+              <Extension Number="06" Description="Cause of state change: CommunicationLost due to local failure."></Extension>
+              <Extension Number="07" Description="Cause of state change: State Change due to unexpected extraction."></Extension>
+              <Extension Number="08" Description="Cause of state change: State Change due to operator intervention/update."></Extension>
+              <Extension Number="09" Description="Cause of state change: Unable to compute IPMB address."></Extension>
+              <Extension Number="10" Description="Cause of state change: Unexpected Deactivation."></Extension>
+              <Extension Number="15" Description="Cause of state change: State Change, Cause Unknown"></Extension>
+            </Offset>
+            <Offset Number="05" Description="FRU Deactivation Requested">
+              <Extension Number="00" Description="Cause of state change: Normal State Change."></Extension>
+              <Extension Number="01" Description="Cause of state change: Change Commanded by software external to FRU."></Extension>
+              <Extension Number="02" Description="Cause of state change: State Change due to operator changing a Handle latch."></Extension>
+              <Extension Number="03" Description="Cause of state change: State Change due to operator pressing the hot swap push button."></Extension>
+              <Extension Number="04" Description="Cause of state change: State Change due to FRU programmatic action."></Extension>
+              <Extension Number="05" Description="Cause of state change: Communication Lost."></Extension>
+              <Extension Number="06" Description="Cause of state change: CommunicationLost due to local failure."></Extension>
+              <Extension Number="07" Description="Cause of state change: State Change due to unexpected extraction."></Extension>
+              <Extension Number="08" Description="Cause of state change: State Change due to operator intervention/update."></Extension>
+              <Extension Number="09" Description="Cause of state change: Unable to compute IPMB address."></Extension>
+              <Extension Number="10" Description="Cause of state change: Unexpected Deactivation."></Extension>
+              <Extension Number="15" Description="Cause of state change: State Change, Cause Unknown"></Extension>
+            </Offset>
+            <Offset Number="06" Description="FRU Deactivation In Progress">
+              <Extension Number="00" Description="Cause of state change: Normal State Change."></Extension>
+              <Extension Number="01" Description="Cause of state change: Change Commanded by software external to FRU."></Extension>
+              <Extension Number="02" Description="Cause of state change: State Change due to operator changing a Handle latch."></Extension>
+              <Extension Number="03" Description="Cause of state change: State Change due to operator pressing the hot swap push button."></Extension>
+              <Extension Number="04" Description="Cause of state change: State Change due to FRU programmatic action."></Extension>
+              <Extension Number="05" Description="Cause of state change: Communication Lost."></Extension>
+              <Extension Number="06" Description="Cause of state change: CommunicationLost due to local failure."></Extension>
+              <Extension Number="07" Description="Cause of state change: State Change due to unexpected extraction."></Extension>
+              <Extension Number="08" Description="Cause of state change: State Change due to operator intervention/update."></Extension>
+              <Extension Number="09" Description="Cause of state change: Unable to compute IPMB address."></Extension>
+              <Extension Number="10" Description="Cause of state change: Unexpected Deactivation."></Extension>
+              <Extension Number="15" Description="Cause of state change: State Change, Cause Unknown"></Extension>
+            </Offset>
+            <Offset Number="07" Description="FRU Communication Lost">
+              <Extension Number="00" Description="Cause of state change: Normal State Change."></Extension>
+              <Extension Number="01" Description="Cause of state change: Change Commanded by software external to FRU."></Extension>
+              <Extension Number="02" Description="Cause of state change: State Change due to operator changing a Handle latch."></Extension>
+              <Extension Number="03" Description="Cause of state change: State Change due to operator pressing the hot swap push button."></Extension>
+              <Extension Number="04" Description="Cause of state change: State Change due to FRU programmatic action."></Extension>
+              <Extension Number="05" Description="Cause of state change: Communication Lost."></Extension>
+              <Extension Number="06" Description="Cause of state change: CommunicationLost due to local failure."></Extension>
+              <Extension Number="07" Description="Cause of state change: State Change due to unexpected extraction."></Extension>
+              <Extension Number="08" Description="Cause of state change: State Change due to operator intervention/update."></Extension>
+              <Extension Number="09" Description="Cause of state change: Unable to compute IPMB address."></Extension>
+              <Extension Number="10" Description="Cause of state change: Unexpected Deactivation."></Extension>
+              <Extension Number="15" Description="Cause of state change: State Change, Cause Unknown"></Extension>
+            </Offset>
+        </TypeCode>
+    </SensorSpecificEvent>
+    <OemEvent>
+      <TypeCode Number="0" ReadingClass="OEM Event" Description="OEM Event">
+	          <Offset Number="0" Description="OEM Event."></Offset>
+      </TypeCode>
+    </OemEvent>
+    <OemTimeStampedEvent>
+      <TypeCode Number="0" ReadingClass="OEM Timestamped Event" Description="OEM Timestamped Event">
+        <Offset Number="0" Description="OEM Timestamped Event. Manufacturer ID: {0}  OEM Defined: {1}"></Offset>
+      </TypeCode>
+    </OemTimeStampedEvent>
+    <OemNonTimeStampedEvent>
+      <TypeCode Number="0" ReadingClass="OEM Non-timestamped Event" Description="OEM  Non-timestamped Event">
+        <Offset Number="0" Description="OEM  Non-timestamped Event. OEM Defined: {0}"></Offset>
+      </TypeCode>
+    </OemNonTimeStampedEvent>
+    <UnknownEvent>
+      <TypeCode Number="0" ReadingClass="Unknown Event" Description="Unknown Event">
+	          <Offset Number="0" Description="Unknown Event."></Offset>
+      </TypeCode>
+    </UnknownEvent>
+  </EventLogTypeCode>
+  <EventLogStrings>
+    <EventString Name="ErrorCode" String="Error Code: {0}"></EventString>
+    <EventString Name="Separator" String=" | "></EventString>
+    <EventString Name="Space" String=" "></EventString>
+    <EventString Name="Unknown" String="Unknown"></EventString>
+    <EventString Name="SensorType" String="Sensor Type: {0}  |  Sensor Name: {1}  |  Sensor Number: {2}"></EventString>
+  </EventLogStrings>
+</SystemEventLog>
