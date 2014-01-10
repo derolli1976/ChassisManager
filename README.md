@@ -20,11 +20,13 @@ Prerequisites
 
 (1) .Net Framework 4.0 Full version
 
-(2) Visual Studio for building solution
+(2) .Net Framework 2.0 Software Development Kit (SDK)
 
-(3) Windows machine: Windows Server OS 
+(3) Visual Studio for building solution
 
-BUILD Instructions
+(4) Windows machine: Windows Server operating system
+
+BUILD/INSTALL Instructions
 ==================
 
 MCS-ChassisManager is developed in Microsoft Visual Studio environment and is completely written in C#. To build the serivce (ChassisManager) or command management interface (WcsCli), please follow the below steps:
@@ -34,6 +36,13 @@ MCS-ChassisManager is developed in Microsoft Visual Studio environment and is co
 (ii) Build the project in Visual Studio by going to menu->BUILD->Build Solution.
 
 (iii) After successful build, the project executable created under a newly created sub-directory called 'bin' (under the parent project directory). 
+
+
+To install Chassis Manager Service, use the following:
+
+Start service: net start chassismanager
+
+Stop service: net stop chassismanager
 
 TEST Instructions
 ==================
