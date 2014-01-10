@@ -19,7 +19,9 @@ Prerequisites
 ==================
 
 (1) .Net Framework 4.0 Full version
+
 (2) Visual Studio for building solution
+
 (3) Windows machine: Windows Server OS 
 
 BUILD Instructions
