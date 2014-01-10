@@ -15,6 +15,13 @@ Components
 
 (4) WcsCli -- This folder contains all source/related files for the framework that the Chassis Manager (CM)leverages to manage the rack level devices. Through this module, a CM provides the front end through the application interface (RESTful web API) for automated management and the command-line interface for manual management. It implements various commands required to manage all devices within the rack and to establish communication directly with the blade management system through a serial multiplexor.
 
+Prerequisites
+==================
+
+(1) .Net Framework 4.0 Full version
+(2) Visual Studio for building solution
+(3) Windows machine: Windows Server OS 
+
 BUILD Instructions
 ==================
 
@@ -25,5 +32,11 @@ MCS-ChassisManager is developed in Microsoft Visual Studio environment and is co
 (ii) Build the project in Visual Studio by going to menu->BUILD->Build Solution.
 
 (iii) After successful build, the project executable created under a newly created sub-directory called 'bin' (under the parent project directory). 
+
+TEST Instructions
+==================
+
+[TODO:bikash]
+
 
 
