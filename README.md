@@ -4,8 +4,13 @@ MCS-ChassisManager
 Microsoft Cloud Server Chasssis Manager is a management software for rack level devices like server, fan and PSU.  
 It mainly consists of two software modules -- Chassis Manager Service and WcsCli. Chassis Manager Service provides implementation to manage various sub-services like fan service, PSU service, power control service, etc. The WcsCli provides a framework to carry out system management operations. This framework is exposed in two forms -- RESTful API for automated management; and a command-line interface for manual management.
 
+Quick Start
+==================
 
-Components
+-- Clone the repo: git clone https://github.com/MSOpenTech/MCS-ChassisManager.git
+-- Download the zip version of the repo (see the right-side pane)
+
+What's included: Components
 ==================
 
 (1) ChassisManager -- This folder contains all source/related files for the Chassis Manager Service. The Chassis Manager service includes 6 main services related to managing fan, PSU, power control, blade management, Top-of-rack (TOR), security and chassis manager control. 
@@ -50,5 +55,13 @@ TEST Instructions
 
 [TODO:bikash]
 
+Bugs and feature requests
+==================
 
+Have a bug or a feature request? Please read our bug/feature filing guidelines. TODO[bikash]: Provide hyperlinks.
+
+Contributing
+==================
+
+Please read through our contributing guidelines. Included are directions for opening issues, coding standards and notes on development.
 
