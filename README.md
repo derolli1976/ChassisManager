@@ -7,8 +7,9 @@ It mainly consists of two software modules -- Chassis Manager Service and WcsCli
 Quick Start
 ==================
 
--- Clone the repo: git clone https://github.com/MSOpenTech/MCS-ChassisManager.git
--- Download the zip version of the repo (see the right-side pane)
+- Clone the repo: git clone https://github.com/MSOpenTech/MCS-ChassisManager.git
+
+- Download the zip version of the repo (see the right-side pane)
 
 What's included: Components
 ==================
@@ -50,18 +51,17 @@ Start service: net start chassismanager
 
 Stop service: net stop chassismanager
 
-TEST Instructions
-==================
+## TEST Instructions
 
 [TODO:bikash]
 
 Bugs and feature requests
 ==================
 
-Have a bug or a feature request? Please read our bug/feature filing guidelines. TODO[bikash]: Provide hyperlinks.
+Have a bug or a feature request? Please read our [bug/feature filing guidelines] ().
 
 Contributing
 ==================
 
-Please read through our contributing guidelines. Included are directions for opening issues, coding standards and notes on development.
+Please read through our [contributing guidelines] (). Included are directions for opening issues, coding standards and notes on development.
 
