@@ -8,6 +8,7 @@
 - [Test Instructions] (#test-instructions)
 - [Bug and Feature Requests] (#bug-and-feature-requests)
 - [Contributing] (#contributing)
+- [Copyright and License] (#copyright-and-license)
 
 ## Introduction
 
@@ -68,4 +69,6 @@ Have a bug or a feature request? Please read our [bug/feature filing guidelines]
 ## Contributing
 
 Please read through our [contributing guidelines] (). Included are directions for opening issues, coding standards and notes on development.
+
+## Copyright and License
 
