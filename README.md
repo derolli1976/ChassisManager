@@ -2,11 +2,11 @@
 
 - [Introduction] (#introduction)
 - [Quick Start] (#quick-start)
-- [Components] (#what-included)
+- [Components Included] (#components-included)
 - [Prerequisites] (#prerequisites)
-- [BUILD/Install Instructions] (#build-install)
-- [Test Instructions] (#test)
-- [Bug and Feature Requests] (#bug-feature)
+- [BUILD and Install Instructions] (#build-and-install-instructions)
+- [Test Instructions] (#test-instructions)
+- [Bug and Feature Requests] (#bug-and-feature-requests)
 - [Contributing] (#contributing)
 
 ## Introduction
@@ -20,7 +20,7 @@ It mainly consists of two software modules -- Chassis Manager Service and WcsCli
 
 - Download the zip version of the repo (see the right-side pane)
 
-## What's included: Components
+## Components Included
 
 (1) ChassisManager -- This folder contains all source/related files for the Chassis Manager Service. The Chassis Manager service includes 6 main services related to managing fan, PSU, power control, blade management, Top-of-rack (TOR), security and chassis manager control. 
 
