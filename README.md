@@ -40,7 +40,7 @@ It mainly consists of two software modules -- Chassis Manager Service and WcsCli
 
 (4) Windows machine: Windows Server operating system
 
-## BUILD/Install Instructions
+## BUILD and Install Instructions
 
 MCS-ChassisManager is developed in Microsoft Visual Studio environment and is completely written in C#. To build the serivce (ChassisManager) or command management interface (WcsCli), please follow the below steps:
 
