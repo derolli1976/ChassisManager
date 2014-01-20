@@ -40,7 +40,7 @@ It primarily consists of two modules -- Chassis Manager Service and WcsCli. Chas
 
 - .Net Framework 2.0 Software Development Kit (SDK)
 
-- Visual Studio for building solution
+- Visual Studio for building and testing solution
 
 - Windows machine: Windows Server operating system
 
