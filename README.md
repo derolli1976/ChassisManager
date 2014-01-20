@@ -12,14 +12,17 @@
 
 ## Introduction
 
-Microsoft Cloud Server Chasssis Manager is a management software for rack level devices like server, fan and PSU.  
-It mainly consists of two software modules -- Chassis Manager Service and WcsCli. Chassis Manager Service provides implementation to manage various sub-services like fan service, PSU service, power control service, etc. The WcsCli provides a framework to carry out system management operations. This framework is exposed in two forms -- RESTful APIs for automated management; and a command-line interface for manual management.
+Microsoft Cloud Server Chasssis Manager is a management software for rack level devices like server, fan and PSU. 
+It primarily consists of two modules -- Chassis Manager Service and WcsCli. Chassis Manager Service provides implementation to manage various sub-services like fan service, PSU service, power control service, etc. The WcsCli provides a framework to carry out system management operations. This framework is exposed in two forms -- RESTful APIs for automated management; and a command-line interface for manual management.
 
 ## Quick Start
 
 - Clone the repo: git clone https://github.com/MSOpenTech/MCS-ChassisManager.git
 
 - Download the zip version of the repo (see the right-side pane)
+
+- Microsoft Visual Studio build environment. README contains further instructions on how to build the project and generate required executables. 
+
 
 ## Components Included
 
@@ -29,17 +32,20 @@ It mainly consists of two software modules -- Chassis Manager Service and WcsCli
 
 (3) IPMI -- This folder contains all source/related files for the implementation of native Windows intelligent platform management interface (IPMI) driver. This is required to provide the capability of in-band management of servers through the operating system. 
 
-(4) WcsCli -- This folder contains all source/related files for the framework that the Chassis Manager (CM)leverages to manage the rack level devices. Through this module, a CM provides the front end through the application interface (RESTful web API) for automated management and the command-line interface for manual management. It implements various commands required to manage all devices within the rack and to establish communication directly with the blade management system through a serial multiplexor.
+(4) WcsCli -- This folder contains all source/related files for the framework that the Chassis Manager (CM) leverages to manage the rack level devices. Through this module, a CM provides the front end through the application interface (RESTful web API) for automated management and the command-line interface for manual management. It implements various commands required to manage all devices within the rack and to establish communication directly with the blade management system through a serial multiplexor.
 
 ## Prerequisites
 
-(1) .Net Framework 4.0 Full version
+- .Net Framework 4.0 Full version
 
-(2) .Net Framework 2.0 Software Development Kit (SDK)
+- .Net Framework 2.0 Software Development Kit (SDK)
 
-(3) Visual Studio for building solution
+- Visual Studio for building solution
 
-(4) Windows machine: Windows Server operating system
+- Windows machine: Windows Server operating system
+
+- Note that no other external dependencies (DLLs or EXEs) are required to be installed as all are self contained in respective project directory. 
+
 
 ## BUILD and Install Instructions
 
@@ -49,10 +55,10 @@ MCS-ChassisManager is developed in Microsoft Visual Studio environment and is co
 
 (ii) Build the project in Visual Studio by going to menu->BUILD->Build Solution.
 
-(iii) After successful build, the project executable created under a newly created sub-directory called 'bin' (under the parent project directory). 
+(iii) After successful build, the project executable is created under a newly created sub-directory called 'bin' (under the parent project directory). 
 
 
-To install Chassis Manager Service, use the following:
+To install Chassis Manager Service, use the following commands:
 
 Start service: net start chassismanager
 
