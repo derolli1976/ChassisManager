@@ -11,9 +11,10 @@
 - [Copyright and License] (#copyright-and-license)
 
 ## Introduction
-
-Microsoft Cloud Server Chasssis Manager is a management software for rack level devices like server, fan and PSU. 
+Microsoft Cloud Server Chassis Manager is a management software for rack level devices like server, fan and PSU. 
 It primarily consists of two modules -- Chassis Manager Service and WcsCli. Chassis Manager Service provides implementation to manage various sub-services like fan service, PSU service, power control service, etc. The WcsCli provides a framework to carry out system management operations. This framework is exposed in two forms -- RESTful APIs for automated management; and a command-line interface for manual management.
+
+The intent of this community project is to collaborate with OCP to build a thriving ecosystem of OSS within OCP and contribute this project to OCP.
 
 ## Quick Start
 
