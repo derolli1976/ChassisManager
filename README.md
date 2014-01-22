@@ -1,7 +1,81 @@
-MCS-ChassisManager
-==================
+## Table of Contents
 
-Microsoft Cloud Server Chasssis Manager Service
+- [Introduction] (#introduction)
+- [Quick Start] (#quick-start)
+- [Components Included] (#components-included)
+- [Prerequisites] (#prerequisites)
+- [BUILD and Install Instructions] (#build-and-install-instructions)
+- [Test Instructions] (#test-instructions)
+- [Bug and Feature Requests] (#bug-and-feature-requests)
+- [Contributing] (#contributing)
+- [Copyright and License] (#copyright-and-license)
 
-[TODO] Description
+## Introduction
+Microsoft Cloud Server Chassis Manager is a management software for rack level devices like server, fan and PSU. 
+It primarily consists of two modules -- Chassis Manager Service and WcsCli. Chassis Manager Service provides implementation to manage various sub-services like fan service, PSU service, power control service, etc. The WcsCli provides a framework to carry out system management operations. This framework is exposed in two forms -- RESTful APIs for automated management; and a command-line interface for manual management.
+
+The intent of this community project is to collaborate with OCP to build a thriving ecosystem of OSS within OCP and contribute this project to OCP.
+
+## Quick Start
+
+- Clone the repo: git clone https://github.com/MSOpenTech/MCS-ChassisManager.git
+
+- Download the zip version of the repo (see the right-side pane)
+
+- Microsoft Visual Studio build environment. README contains further instructions on how to build the project and generate required executables. 
+
+
+## Components Included
+
+(i) ChassisManager -- This folder contains all source/related files for the Chassis Manager Service. The Chassis Manager service includes 6 main services related to managing fan, PSU, power control, blade management, Top-of-rack (TOR), security and chassis manager control. 
+
+(ii) Contracts -- This folder contains all related files for Windows Chassis Manager service contract.
+
+(iii) IPMI -- This folder contains all source/related files for the implementation of native Windows intelligent platform management interface (IPMI) driver. This is required to provide the capability of in-band management of servers through the operating system. 
+
+(iv) WcsCli -- This folder contains all source/related files for the framework that the Chassis Manager (CM) leverages to manage the rack level devices. Through this module, a CM provides the front end through the application interface (RESTful web API) for automated management and the command-line interface for manual management. It implements various commands required to manage all devices within the rack and to establish communication directly with the blade management system through a serial multiplexor.
+
+## Prerequisites
+
+- .Net Framework 4.0 Full version
+
+- .Net Framework 2.0 Software Development Kit (SDK)
+
+- Visual Studio for building and testing solution
+
+- Windows machine: Windows Server operating system
+
+- Note that no other external dependencies (DLLs or EXEs) are required to be installed as all are self contained in respective project directory. 
+
+
+## BUILD and Install Instructions
+
+MCS-ChassisManager is developed in Microsoft Visual Studio environment and is completely written in C#. To build the serivce (ChassisManager) or command management interface (WcsCli), please follow the below steps:
+
+- Import the project in Visual Studio by browsing and importing the specific project solution file. We have tested this on both Visual Studio 2012 Ultimate and Visual Studio Express versions.
+
+- Build the project in Visual Studio by going to menu->BUILD->Build Solution.
+
+- After successful build, the project executable is created under a newly created sub-directory called 'bin' (under the parent project directory). 
+
+
+To install Chassis Manager Service, use the following commands:
+
+Start service: net start chassismanager
+
+Stop service: net stop chassismanager
+
+## Test Instructions
+
+Will be provided soon.
+
+## Bug and Feature Requests
+
+Have a bug or a feature request? Please read our [bug/feature filing guidelines] ().
+
+## Contributing
+
+Please read through our [contributing guidelines] (). Included are directions for opening issues, coding standards and notes on development.
+
+## Copyright and License
 
