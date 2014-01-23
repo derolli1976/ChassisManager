@@ -7,7 +7,7 @@
 - [BUILD and Install Instructions] (#build-and-install-instructions)
 - [Test Instructions] (#test-instructions)
 - [Bug and Feature Requests] (#bug-and-feature-requests)
-- [Contributing] (#contributing)
+- [How To Contribute] (https://github.com/MSOpenTech/MCS-ChassisManager/wiki/How-To-Contribute)
 - [Copyright and License] (#copyright-and-license)
 
 ## Introduction
