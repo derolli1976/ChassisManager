@@ -10,6 +10,13 @@
 // CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABLITY OR NON-INFRINGEMENT. 
 // See the Apache 2 License for the specific language governing permissions and limitations under the License. 
 
+using System;
+using System.ComponentModel;
+using System.Configuration;
+using System.Configuration.Install;
+using System.Reflection;
+using System.ServiceProcess;
+
 namespace Microsoft.GFS.WCS.WcsCli
 {
     // Provide the ProjectInstaller class which allows 
