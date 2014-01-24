@@ -1,30 +1,14 @@
-﻿/********************************************************
-*                                                       *
-*   Copyright (C) Microsoft. All rights reserved.       *
-*                                                       *
-*   Auther:  Bryankel@Microsoft.com                     *
-*            srgovin@microsoft.com                      *
-*                                                       *
-********************************************************/
+// Copyright © Microsoft Open Technologies, Inc.
+// All Rights Reserved
+// Licensed under the Apache License, Version 2.0 (the "License"); 
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at 
+// http://www.apache.org/licenses/LICENSE-2.0 
 
-/* Tracer class usage hints */
-
-            //Tracer.WriteInfo(1, " info ");
-            //Tracer.WriteError("error ");
-            //Tracer.WriteWarning("warning ");
-            //Tracer.WriteUserLog("user log data ");
-            //Tracer.WriteWarning("123 in Hex is 0x{0:X}", 123);
-            //Tracer.WriteWarning("123 in Hex is 0x{0:X} and 45 in hex is 0x{1:X}", 123, 45);
-
-/* Tracer class usage hints */
-
-// TODO: Trace before printing check if it is null
-
-using System.Diagnostics;
-using System.IO;
-using System;
-using Microsoft.GFS.WCS.ChassisManager;
-using System.Threading;
+// THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+// KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OR
+// CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABLITY OR NON-INFRINGEMENT. 
+// See the Apache 2 License for the specific language governing permissions and limitations under the License. 
 
 namespace Microsoft.GFS.WCS.ChassisManager
 {
