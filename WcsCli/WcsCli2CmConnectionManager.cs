@@ -10,6 +10,18 @@
 // CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABLITY OR NON-INFRINGEMENT. 
 // See the Apache 2 License for the specific language governing permissions and limitations under the License. 
 
+using System;
+using System.Net;
+using System.Net.Security;
+using System.Security.Cryptography.X509Certificates;
+using System.ServiceModel;
+using System.ServiceModel.Description;
+using System.Diagnostics;
+using System.Net.Sockets;
+using System.Reflection;
+using System.Xml;
+using System.ServiceProcess;
+
 namespace Microsoft.GFS.WCS.WcsCli
 {
     /// <summary>
