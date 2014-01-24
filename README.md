@@ -62,7 +62,7 @@ Stop service: net stop chassismanager
 
 ## Test Instructions
 
-We are working on providing an integrated test cases suite soon.
+We are working on providing a suite of packaged test cases soon.
 
 
 
