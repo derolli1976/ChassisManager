@@ -10,6 +10,12 @@
 // CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABLITY OR NON-INFRINGEMENT. 
 // See the Apache 2 License for the specific language governing permissions and limitations under the License. 
 
+using System;
+using System.Threading;
+using System.Collections;
+using System.IO.Ports;
+using System.Diagnostics;
+
 namespace Microsoft.GFS.WCS.ChassisManager
 {
     /// <summary>
