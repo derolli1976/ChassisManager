@@ -59,7 +59,7 @@ MCS-ChassisManager is developed in Microsoft Visual Studio environment and is co
 
 - Import the project in Visual Studio by browsing and importing the specific project solution file. We have tested this on both Visual Studio 2012 Ultimate and Visual Studio Express versions.
 
-- Build the project in Visual Studio by going to menu->BUILD->Build Solution.
+- Build the project in Visual Studio by going to menu->BUILD->Build Solution or Ctrl+Shift+B.
 
 - After successful build, the project executable is created under a newly created sub-directory called 'bin' (under the parent project directory). 
 
