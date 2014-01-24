@@ -1,20 +1,20 @@
 ## Table of Contents
 
-- [Introduction] (#introduction)
+- [MCS Chassis Manager] (#introduction)
 - [Quick Start] (#quick-start)
 - [Components Included] (#components-included)
 - [Prerequisites] (#prerequisites)
 - [BUILD and Install Instructions] (#build-and-install-instructions)
 - [Test Instructions] (#test-instructions)
-- [Bug and Feature Requests] (#bug-and-feature-requests)
-- [How To Contribute] (https://github.com/MSOpenTech/MCS-ChassisManager/wiki/How-To-Contribute)
-- [Copyright and License] (#copyright-and-license)
 
-## Introduction
+
+## MCS Chassis Manager
 Microsoft Cloud Server Chassis Manager is a management software for rack level devices like server, fan and PSU. 
 It primarily consists of two modules -- Chassis Manager Service and WcsCli. Chassis Manager Service provides implementation to manage various sub-services like fan service, PSU service, power control service, etc. The WcsCli provides a framework to carry out system management operations. This framework is exposed in two forms -- RESTful APIs for automated management; and a command-line interface for manual management.
 
 The intent of this community project is to collaborate with OCP to build a thriving ecosystem of OSS within OCP and contribute this project to OCP.
+
+Read [How To Contribute] (https://github.com/MSOpenTech/MCS-ChassisManager/wiki/How-To-Contribute) for instructions on making contributions.
 
 ## Quick Start
 
@@ -69,13 +69,9 @@ Stop service: net stop chassismanager
 
 Will be provided soon.
 
-## Bug and Feature Requests
 
-Have a bug or a feature request? Please read our [bug/feature filing guidelines] ().
 
-## Contributing
 
-Please read through our [contributing guidelines] (). Included are directions for opening issues, coding standards and notes on development.
 
-## Copyright and License
+
 
