@@ -10,6 +10,17 @@
 // CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABLITY OR NON-INFRINGEMENT. 
 // See the Apache 2 License for the specific language governing permissions and limitations under the License. 
 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.ServiceModel;
+using System.Security.Principal;
+using System.ServiceModel.Channels;
+using System.Xml;
+using System.ServiceModel.Web;
+using System.Net;
+
 namespace Microsoft.GFS.WCS.ChassisManager
 {
     // This class inherits from SeriveAuthorizationManager and its overridden checkaccess method will be called before any API execution
