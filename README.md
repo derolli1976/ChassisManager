@@ -13,7 +13,7 @@ All new work should be in the development branch. Master is now reserved to tag 
 
 ## Quick Start
 
-- Clone the repo: git clone https://github.com/MSOpenTech/MCS-ChassisManager.git
+- Clone the repo: git clone https://github.com/MSOpenTech/ChassisManager.git
 
 - Download the zip version of the repo (see the right-side pane)
 
