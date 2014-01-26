@@ -1,4 +1,4 @@
-## MCS Chassis Manager
+## Chassis Manager
 Microsoft Cloud Server Chassis Manager is a management software for rack level devices like server, fan and PSU. 
 It primarily consists of two modules -- Chassis Manager Service and WcsCli. Chassis Manager Service provides implementation to manage various sub-services like fan service, PSU service, power control service, etc. The WcsCli provides a framework to carry out system management operations. This framework is exposed in two forms -- RESTful APIs for automated management; and a command-line interface for manual management. This open source project is a reference implementation of the [Microsoft cloud server chassis management specification] (provide link to the Spec.).
 
@@ -6,7 +6,7 @@ The intent of this community project is to collaborate with [Open Compute Projec
 
 If your intent is to use the Chassis Manager software without contributing back to this project, then use the MASTER branch which holds the approved and stable public releases.
 
-If your goal is to improve or extend the code and contribute back to this project, then you should make your changes in, and submit a pull request against, the DEVELOPMENT branch. Read through our wiki section on [how to contribute] (https://github.com/MSOpenTech/MCS-ChassisManager/wiki/how-to-contribute) for a walk-through of the contribution process.
+If your goal is to improve or extend the code and contribute back to this project, then you should make your changes in, and submit a pull request against, the DEVELOPMENT branch. Read through our wiki section on [how to contribute] (https://github.com/MSOpenTech/ChassisManager/wiki/how-to-contribute) for a walk-through of the contribution process.
 
 All new work should be in the development branch. Master is now reserved to tag builds.
 
@@ -45,7 +45,7 @@ All new work should be in the development branch. Master is now reserved to tag 
 
 ## BUILD and Install Instructions
 
-MCS-ChassisManager is developed in Microsoft Visual Studio environment and is completely written in C#. To build the serivce (ChassisManager) or command management interface (WcsCli), please follow the below steps:
+ChassisManager is developed in Microsoft Visual Studio environment and is completely written in C#. To build the serivce (ChassisManager) or command management interface (WcsCli), please follow the below steps:
 
 - Import the project in Visual Studio by browsing and importing the specific project solution file. We have tested this on both Visual Studio 2012 Ultimate and Visual Studio Express versions.
 
