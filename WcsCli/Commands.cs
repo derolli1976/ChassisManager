@@ -1675,7 +1675,6 @@ namespace Microsoft.GFS.WCS.WcsCli
         }
     }
 
-    // TODO: Do we need wait until poweron? ask Matt Eason since this is supported 
     // Try catch in all functions - code gets bloated
     internal class poweron : command
     {
