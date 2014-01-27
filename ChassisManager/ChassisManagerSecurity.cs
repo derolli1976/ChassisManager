@@ -40,7 +40,6 @@ namespace Microsoft.GFS.WCS.ChassisManager
 
             // If the most-privileged-role that this user belongs has access to this api, then allow access, otherwise deny access
             // Returning true will allow the user to execute the actual API function; Returning false will deny access to the user
-            // TODO: May be we should send back a HTTP error code; will include this after shivi checks in her code
             if (ChassisManagerSecurity.GetCurrentUserMostPrivilegedRole() <= ChassisManagerSecurity.GetCurrentApiLeastPrivilegedRole(apiSplit[0]))
             {
                 Tracer.WriteUserLog("CheckAccess: Authorized");
