@@ -1,6 +1,6 @@
 ## Chassis Manager
 Microsoft cloud server Chassis Manager is a management software for rack level devices like server, fan and PSU. 
-It primarily consists of two modules -- Chassis Manager Service and WcsCli. Chassis Manager Service provides implementation to manage various sub-services like fan service, PSU service, power control service, etc. The WcsCli provides a framework to carry out system management operations. This framework is exposed in two forms -- RESTful APIs for automated management; and a command-line interface for manual management. This open source project is a reference implementation of the [Microsoft cloud server Chassis Manager specification] (provide link to the Spec.).
+It primarily consists of two modules -- Chassis Manager Service and WcsCli. Chassis Manager Service provides implementation to manage various sub-services like fan service, PSU service, power control service, etc. The WcsCli provides a framework to carry out system management operations. This framework is exposed in two forms -- RESTful APIs for automated management; and a command-line interface for manual management. This open source project is a reference implementation of the Microsoft cloud server Chassis Manager specification (will be available shortly).
 
 The intent of this community project is to collaborate with [Open Compute Project (OCP)] (http://www.opencompute.org/) to build a thriving ecosystem of OSS within OCP. 
 
@@ -32,7 +32,7 @@ All new work should be in the development branch. Master is now reserved to tag 
 
 (iv) WcsCli -- This folder contains all source/related files for the framework that the Chassis Manager (CM) leverages to manage the rack level devices. Through this module, a CM provides the front end through the application interface (RESTful web API) for automated management and the command-line interface for manual management. It implements various commands required to manage all devices within the rack and to establish communication directly with the blade management system through a serial multiplexor.
 
-Please refer [Microsoft cloud server Chassis Manager specification] (provide link to the Spec.) for further details on these components.
+Please refer Microsoft cloud server Chassis Manager specification (will be available shortly) for further details on these components.
 
 ## Prerequisites
 
